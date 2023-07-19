@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    ${ for(author-meta) }
+    <meta name="author" content="${ author-meta }" />
+    ${ endfor } ${ if(date-meta) }
+    <meta name="dcterms.date" content="${ date-meta }" />
+    ${ endif } ${ if(keywords) }
+    <meta
+      name="keywords"
+      content="${ for(keywords) }${ keywords }${ sep }, ${ endfor }"
+    />
+    ${ endif } ${ if(description-meta) }
+    <meta name="description" content="${ description-meta }" />
+    ${ endif }
+    <title
+      >${ if(title-prefix) }${ title-prefix } – ${ endif }${ pagetitle }</title
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    ${ for(css) }
+    <link rel="stylesheet" href="${ css }" />
+    ${ endfor } ${ if(highlighting-css) }
+    <style type="text/css">
+      ${ highlighting-css }
+    </style>
+    ${ endif } ${ if(math) } ${ if(mathjax) }
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    ${ endif } ${ math } ${ endif }
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    ${ for(include-before) } ${ include-before } ${ endfor } ${ if(title) }
+    <section class="hero is-primary">
+      ${ if(banner) }
+      <figure class="image is-16by9">
+        <img src="${ banner }" />
+      </figure>
+      ${ endif }
+      <div class="hero-body">
+        <p class="title"> ${ title } </p>
+        ${ if(subtitle) }
+        <p class="subtitle"> ${ subtitle } </p>
+        ${ endif }
+      </div>
+    </section>
+    ${ endif }
+    <section class="section">
+      <div class="container"> ${ body } </div>
+    </section>
+    ${ for(include-after) } ${ include-after } ${ endfor }
+  </body>
+</html>

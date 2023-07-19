@@ -1,0 +1,25 @@
+from: markdown
+
+input-files:
+  - "${.}/README.md"
+
+resource-path:
+  - "${.}"
+  - "${.}/../filters/wenkokke/bubble"
+
+filters:
+  - "${.}/../filters/wenkokke/bubble/bubble.lua"
+
+metadata:
+  author: "Keri Kokke"
+  author-meta: "Keri Kokke"
+  bubble:
+    blockquote: "true"
+    Sam:
+      style: "bottom-left"
+    Cat:
+      style: "bottom-right"
+  lang: "en-GB"
+  title: "Strawberry Disaster"
+  title-prefix: "Experimental Jam #1"
+  subtitle: "Experimental Jam #1"

@@ -1,0 +1,3 @@
+[submodule "filters/wenkokke"]
+	path = filters/wenkokke
+	url = git@github.com:wenkokke/pandoc-filters.git
