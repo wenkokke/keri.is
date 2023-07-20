@@ -5,7 +5,9 @@
   "main": "index.mjs",
   "dependencies": {
     "@parcel/diagnostic": "^2.9.3",
-    "@parcel/plugin": "^2.9.3"
+    "@parcel/plugin": "^2.9.3",
+    "minimatch": "^9.0.3",
+    "omit": "^1.0.1"
   },
   "engines": {
     "node": ">=12",

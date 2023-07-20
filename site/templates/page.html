@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     ${ for(author-meta) }
     <meta name="author" content="${ author-meta }" />
-    ${ endfor } ${ if(date-meta) }
+    ${ endfor }${ if(date-meta) }
     <meta name="dcterms.date" content="${ date-meta }" />
-    ${ endif } ${ if(keywords) }
+    ${ endif }${ if(keywords) }
     <meta
       name="keywords"
       content="${ for(keywords) }${ keywords }${ sep }, ${ endfor }"
     />
-    ${ endif } ${ if(description-meta) }
+    ${ endif }${ if(description-meta) }
     <meta name="description" content="${ description-meta }" />
     ${ endif }
     <title></title>
       ${ if(title-prefix) }${ title-prefix } – ${ endif }${ pagetitle }
     </title>
-    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="../assets/style.scss" />
   </head>
   <body>
-    ${ for(include-before) } ${ include-before } ${ endfor } ${ if(title) }
+    ${ for(include-before) }${ include-before }${ endfor }${ if(title) }
     <section class="hero is-primary">
       ${ if(banner) }
       <figure class="image is-16by9">
@@ -40,6 +40,6 @@
     <section class="section">
       <div class="container">${ body }</div>
     </section>
-    ${ for(include-after) } ${ include-after } ${ endfor }
+    ${ for(include-after) }${ include-after }${ endfor }
   </body>
 </html>

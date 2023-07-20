@@ -1,0 +1,12 @@
+{
+  "pages/*.md": {
+    "standalone": true,
+    "template": "${.}/templates/page.html",
+    "lua-filter": [
+      "${.}/filters/wenkokke/bubble/bubble.lua"
+    ],
+    "metadata-file": [
+      "${.}/templates/page.yaml"
+    ]
+  }
+}
