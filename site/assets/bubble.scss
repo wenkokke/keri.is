@@ -1,9 +1,18 @@
-.bubble {
-  @extend %block;
-  position: relative;
+.bubbles {
+  @include block(1rem);
+  margin-top: 1rem;
+  // border: 1px solid $scheme-main-ter;
+  // border-radius: $radius;
   padding: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+.bubble {
+  @include block(1.5rem);
+  position: relative;
+  padding: 0.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   background-color: $info;
-  border-color: $dark;
   border-radius: $radius-large;
   color: $text-invert;
 }
@@ -11,6 +20,7 @@
   color: $text-invert-strong;
 }
 .bubble.bubble-bottom-left {
+  margin-right: 1rem;
   border-bottom-left-radius: 0;
 }
 .bubble.bubble-bottom-left:after {
@@ -28,6 +38,7 @@
   display: block;
 }
 .bubble.bubble-bottom-right {
+  margin-left: 1rem;
   border-bottom-right-radius: 0;
 }
 .bubble.bubble-bottom-right:after {
