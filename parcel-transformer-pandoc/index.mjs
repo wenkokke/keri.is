@@ -137,7 +137,7 @@ export default new Transformer({
     const renderedOptions = renderOptions({ ...omit(['from', 'to', 'read', 'write'], options), from: reader, to: writer });
     const command = ['pandoc', ...renderedOptions].join(' ');
     logger.verbose({ message: `Running '${command}'` });
-    const output = await execSync(command, { input, cwd: config.root, encoding: 'utf-8', timeout: 1000 });
+    const output = await execSync(command, { input, cwd: config.root, encoding: 'utf-8' });
     logger.verbose({ message: `Done` });
     asset.setCode(output);
 

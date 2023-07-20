@@ -1,0 +1,58 @@
+.bubble {
+  @extend %block;
+  position: relative;
+  padding: 0.5rem;
+  background-color: $info;
+  border-color: $dark;
+  border-radius: $radius-large;
+  color: $text-invert;
+}
+.bubble > .bubble-name {
+  color: $text-invert-strong;
+}
+.bubble.bubble-bottom-left {
+  border-bottom-left-radius: 0;
+}
+.bubble.bubble-bottom-left:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1rem solid transparent;
+  border-top-color: $info;
+  border-bottom: 0;
+  border-left: 0;
+  margin-bottom: -1rem;
+  display: block;
+}
+.bubble.bubble-bottom-right {
+  border-bottom-right-radius: 0;
+}
+.bubble.bubble-bottom-right:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1rem solid transparent;
+  border-top-color: $info;
+  border-bottom: 0;
+  border-right: 0;
+  margin-bottom: -1rem;
+  display: block;
+}
+.bubble.bubble-Sam {
+  background-color: $primary;
+}
+.bubble.bubble-Sam:after {
+  border-top-color: $primary;
+}
+.bubble.bubble-Cat {
+  background-color: $secondary;
+}
+.bubble.bubble-Cat:after {
+  border-top-color: $secondary;
+}
