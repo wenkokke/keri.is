@@ -1,0 +1,14 @@
+{
+  "name": "parcel-transformer-pandoc",
+  "version": "0.1.0",
+  "license": "GPL3",
+  "main": "index.mjs",
+  "dependencies": {
+    "@parcel/diagnostic": "^2.9.3",
+    "@parcel/plugin": "^2.9.3"
+  },
+  "engines": {
+    "node": ">=12",
+    "parcel": "^2.0.0"
+  }
+}

@@ -16,25 +16,10 @@
     ${ endif } ${ if(description-meta) }
     <meta name="description" content="${ description-meta }" />
     ${ endif }
-    <title
-      >${ if(title-prefix) }${ title-prefix } – ${ endif }${ pagetitle }</title
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    ${ for(css) }
-    <link rel="stylesheet" href="${ css }" />
-    ${ endfor } ${ if(highlighting-css) }
-    <style type="text/css">
-      ${ highlighting-css }
-    </style>
-    ${ endif } ${ if(math) } ${ if(mathjax) }
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    ${ endif } ${ math } ${ endif }
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
+    <title></title>
+      ${ if(title-prefix) }${ title-prefix } – ${ endif }${ pagetitle }
+    </title>
+    <link rel="stylesheet" href="./style.scss" />
   </head>
   <body>
     ${ for(include-before) } ${ include-before } ${ endfor } ${ if(title) }
@@ -45,15 +30,15 @@
       </figure>
       ${ endif }
       <div class="hero-body">
-        <p class="title"> ${ title } </p>
+        <p class="title">${ title }</p>
         ${ if(subtitle) }
-        <p class="subtitle"> ${ subtitle } </p>
+        <p class="subtitle">${ subtitle }</p>
         ${ endif }
       </div>
     </section>
     ${ endif }
     <section class="section">
-      <div class="container"> ${ body } </div>
+      <div class="container">${ body }</div>
     </section>
     ${ for(include-after) } ${ include-after } ${ endfor }
   </body>

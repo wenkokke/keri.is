@@ -1,7 +1,0 @@
-resource-path:
-  - "${.}/../templates"
-
-template: "template.html"
-
-metadata:
-  banner: "./images/strawberry-disaster.png"

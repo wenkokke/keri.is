@@ -1,25 +1,22 @@
 from: markdown
 
-input-files:
-  - "${.}/README.md"
-
 resource-path:
-  - "${.}"
-  - "${.}/../filters/wenkokke/bubble"
+  - "${.}/../"
+  - "${.}/../filters/wenkokke/bubble/"
 
 filters:
+  # Enable Bubble filter
   - "${.}/../filters/wenkokke/bubble/bubble.lua"
 
 metadata:
   author: "Keri Kokke"
   author-meta: "Keri Kokke"
+  lang: "en-GB"
+
+  # Configuration for Bubble filter
   bubble:
     blockquote: "true"
     Sam:
       style: "bottom-left"
     Cat:
       style: "bottom-right"
-  lang: "en-GB"
-  title: "Strawberry Disaster"
-  title-prefix: "Experimental Jam #1"
-  subtitle: "Experimental Jam #1"
