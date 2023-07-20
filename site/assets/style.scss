@@ -1,2 +1,24 @@
 @charset "utf-8";
+
+/* Strawberry Disaster Palette */
+$jasper: #c24f3cff;
+$desert-sand: #d7b8a1ff;
+$raisin-black: #222228ff;
+$chocolate-cosmos: #591f25ff;
+$bole: #805044ff;
+$ash-gray: #abb6a9ff;
+$beaver: #bc8f79ff;
+$wenge: #514949ff;
+$paynes-gray: #576b70ff;
+
+/* Bulma Colors */
+$primary: $jasper;
+$link: $bole;
+$info: $desert-sand;
+$success: $ash-gray;
+$warning: $beaver;
+$danger: $chocolate-cosmos;
+$dark: $paynes-gray;
+$text: $raisin-black;
+
 @import "bulma/bulma";

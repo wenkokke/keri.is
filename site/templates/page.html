@@ -16,7 +16,7 @@
     ${ endif }${ if(description-meta) }
     <meta name="description" content="${ description-meta }" />
     ${ endif }
-    <title></title>
+    <title>
       ${ if(title-prefix) }${ title-prefix } – ${ endif }${ pagetitle }
     </title>
     <link rel="stylesheet" href="../assets/style.scss" />
@@ -24,9 +24,24 @@
   <body>
     ${ for(include-before) }${ include-before }${ endfor }${ if(title) }
     <section class="hero is-primary">
-      ${ if(banner) }
+      ${ if(hero) }
       <figure class="image is-16by9">
-        <img src="${ banner }" />
+        <picture>
+          <source srcset="${ hero }?as=avif&width=1920" type="image/avif" />
+          <source srcset="${ hero }?as=webp&width=1920" type="image/webp" />
+          <source srcset="${ hero }?as=jpeg&width=1920" type="image/jpeg" />
+          <source srcset="${ hero }?as=avif&width=970" type="image/avif" />
+          <source srcset="${ hero }?as=webp&width=970" type="image/webp" />
+          <source srcset="${ hero }?as=jpeg&width=970" type="image/jpeg" />
+          <source srcset="${ hero }?as=avif&width=300" type="image/avif" />
+          <source srcset="${ hero }?as=webp&width=300" type="image/webp" />
+          <source srcset="${ hero }?as=jpeg&width=300" type="image/jpeg" />
+          <img
+            src="${ hero }?as=jpeg&width=1920"
+            type="image/jpeg"
+            alt="Hero image"
+          />
+        </picture>
       </figure>
       ${ endif }
       <div class="hero-body">

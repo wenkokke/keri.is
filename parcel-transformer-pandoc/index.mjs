@@ -3,17 +3,20 @@ import { minimatch } from 'minimatch';
 import path from 'path';
 import omit from 'omit';
 import fs from 'fs';
+import assert from 'assert';
 import { execSync } from 'child_process';
 
-// Apply a function to each primitive value in an object.
+// Apply a function to each string value in an object.
 // Recurse over arrays and objects.
 function mapValues(fun, obj) {
-  if (Array.isArray(obj)) {
+  if (typeof obj === 'string') {
+    return fun(obj)
+  } else if (Array.isArray(obj)) {
     return obj.map((val) => mapValues(fun, val))
   } else if (typeof obj === 'object') {
     return Object.fromEntries(Object.entries(obj).map(([key, val]) => [key, mapValues(fun, val)]))
   } else {
-    return fun(obj)
+    return obj
   }
 }
 
@@ -69,25 +72,37 @@ function getAssetType({ writer }) {
   }
 }
 
+// Get dependencies.
+function addAssetDependencies({ asset, options, logger }) {
+  return mapValues((filePath) => {
+    if (fs.existsSync(filePath)) {
+      assert(typeof filePath === 'string');
+      asset.invalidateOnFileChange(filePath);
+    }
+    return filePath
+  }, options)
+}
+
 // Render Pandoc CLI options.
 function renderOptions(options) {
-  return Object.entries(options).flatMap(([optionName, optionValue]) => {
-    if (typeof optionValue === 'boolean') {
-      return [`--${optionName}`]
-    } else if (typeof optionValue === 'string') {
-      return [`--${optionName}=${optionValue}`]
-    } else if (Array.isArray(optionValue)) {
-      return optionValue.map((optionValue) => {
-        return `--${optionName}=${optionValue}`
-      })
-    } else if (typeof optionValue === 'object') {
-      return Object.entries(optionValue).map(
-        ([variableName, variableValue]) => {
-          assert(typeof variableValue === 'string')
-          return `${optionName} ${variableName}=${variableValue}`
+  return Object.entries(options).flatMap(
+    ([optionName, optionValue]) => {
+      if (typeof optionValue === 'boolean') {
+        return [`--${optionName}`]
+      } else if (typeof optionValue === 'string') {
+        return [`--${optionName}=${optionValue}`]
+      } else if (Array.isArray(optionValue)) {
+        return optionValue.map((optionValue) => {
+          return `--${optionName}=${optionValue}`
         })
-    }
-  })
+      } else if (typeof optionValue === 'object') {
+        return Object.entries(optionValue).map(
+          ([variableName, variableValue]) => {
+            assert(typeof variableValue === 'string')
+            return `${optionName} ${variableName}=${variableValue}`
+          })
+      }
+    })
 }
 
 export default new Transformer({
@@ -102,10 +117,8 @@ export default new Transformer({
     const root = path.dirname(filePath);
     return {
       root,
-      options: mapValues((val) =>
-        typeof val === 'string'
-          ? val.replace('${.}', root).trim()
-          : val, contents),
+      options: mapValues(
+        (val) => val.replace('${.}', root).trim(), contents),
     }
   },
   async transform({ asset, config, logger }) {
@@ -115,6 +128,9 @@ export default new Transformer({
     // Determine the Pandoc reader & writer.
     const reader = getReader({ options, type: asset.type });
     const writer = getWriter({ options, type: asset.type });
+
+    // Determine dependencies.
+    addAssetDependencies({ asset, options, logger })
 
     // Run Pandoc.
     const input = await asset.getCode();
