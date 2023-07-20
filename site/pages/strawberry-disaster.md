@@ -1,6 +1,6 @@
 ---
 title: "Strawberry Disaster"
-title-prefix: "Experimental Jam"
+subtitle: "Experimental Jam #1"
 hero: "../assets/images/strawberry-disaster.png"
 ---
 

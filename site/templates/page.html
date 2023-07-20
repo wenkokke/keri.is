@@ -16,9 +16,7 @@
     ${ endif }${ if(description-meta) }
     <meta name="description" content="${ description-meta }" />
     ${ endif }
-    <title>
-      ${ if(title-prefix) }${ title-prefix } – ${ endif }${ pagetitle }
-    </title>
+    <title>${ pagetitle }${ if(subtitle) } – ${ subtitle }${ endif }</title>
     <link rel="stylesheet" href="../assets/style.scss" />
   </head>
   <body>
