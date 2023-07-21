@@ -11,7 +11,7 @@
     "bulma": "^0.9.4",
     "parcel": "^2.9.3",
     "parcel-transformer-pandoc": "*",
-    "sharp": "^0.32.4",
+    "sharp": "^0.31.3",
     "@parcel/transformer-sass": "^2.9.3"
   }
 }
