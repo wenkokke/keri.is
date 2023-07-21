@@ -1,6 +1,10 @@
 {
   "private": true,
   "name": "keri.is",
+  "scripts": {
+    "build": "npm run build:experimental-jams",
+    "build:experimental-jams": "npm run build --workspace=experimental-jams"
+  },
   "workspaces": [
     "parcel-transformer-pandoc",
     "experimental-jams"
