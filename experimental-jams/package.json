@@ -3,15 +3,16 @@
   "name": "site",
   "version": "0.1.0",
   "scripts": {
-    "dev": "parcel pages/strawberry-disaster/index.md",
-    "build": "parcel build pages/strawberry-disaster/index.md"
+    "dev": "parcel src/index.md",
+    "build": "parcel build src/index.md"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
     "bulma": "^0.9.4",
     "parcel": "^2.9.3",
+    "parcel-namer-rewrite": "^2.0.0-rc.3",
     "parcel-transformer-pandoc": "*",
-    "sharp": "^0.31.3",
-    "@parcel/transformer-sass": "^2.9.3"
+    "sharp": "^0.31.3"
   }
 }

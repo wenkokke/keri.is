@@ -4,5 +4,13 @@
   "workspaces": [
     "parcel-transformer-pandoc",
     "experimental-jams"
-  ]
+  ],
+  "parcel-namer-rewrite": {
+    "chain": "@parcel/namer-default",
+    "hashing": "always",
+    "rules": {
+      "index.html": "index.html",
+      "(.*).html": "$1/index.html"
+    }
+  }
 }

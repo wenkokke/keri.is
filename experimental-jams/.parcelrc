@@ -5,5 +5,9 @@
       "parcel-transformer-pandoc",
       "..."
     ]
-  }
+  },
+  "namers": [
+    "parcel-namer-rewrite",
+    "..."
+  ]
 }
