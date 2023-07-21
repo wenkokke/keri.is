@@ -53,6 +53,10 @@ jobs:
         run: npm ci && npm run build --workspace=site
         shell: bash
 
+      - name: Show contents of dist/
+        run: ls dist/
+        shell: bash
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
