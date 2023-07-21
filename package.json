@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "experimental-jams",
+  "name": "keri.is",
   "workspaces": [
     "parcel-transformer-pandoc",
-    "site"
+    "experimental-jams"
   ],
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3"

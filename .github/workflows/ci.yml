@@ -50,7 +50,7 @@ jobs:
           version: ${{ env.PANDOC_VERSION }}
 
       - name: Build Pages
-        run: npm ci && npm run build --workspace=site -- --public-url=/experimental-jams
+        run: npm ci && npm run build --workspace=experimental-jams -- --public-url=/experimental-jams
         shell: bash
 
       - name: Setup Pages
@@ -59,7 +59,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "site/dist"
+          path: "experimental-jams/dist"
 
       - name: Deploy to GitHub Pages
         id: deployment
