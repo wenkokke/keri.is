@@ -8,12 +8,12 @@
     {
       "standalone": true,
       "template": "${.}/templates/page.html",
-      "lua-filter": "${.}/../filters/bubble/bubble.lua",
+      "lua-filter": "${.}/../pandoc-filters/bubble/bubble.lua",
       "metadata-file": "${.}/templates/page.yaml",
-      "write": "${.}/../filters/html_metadata_block/html_metadata_block.lua"
+      "write": "${.}/../pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
-      "read": "${.}/../filters/raw_html/raw_html.lua",
+      "read": "${.}/../pandoc-filters/raw_html/raw_html.lua",
       "standalone": true,
       "template": "${.}/templates/default.html",
       "metadata-file": "${.}/templates/default.yaml"
