@@ -3,8 +3,8 @@
   "name": "site",
   "version": "0.1.0",
   "scripts": {
-    "dev": "parcel pages/strawberry-disaster.md",
-    "build": "parcel build pages/strawberry-disaster.md"
+    "dev": "parcel pages/strawberry-disaster/index.md",
+    "build": "parcel build pages/strawberry-disaster/index.md"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {

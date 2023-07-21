@@ -1,7 +1,7 @@
 ---
 title: "Strawberry Disaster"
 subtitle: "Experimental Jam #1"
-hero: "../assets/images/strawberry-disaster.png"
+hero: "./hero.png"
 ---
 
 Let's talk about Strawberry Disaster!
