@@ -4,8 +4,5 @@
   "workspaces": [
     "parcel-transformer-pandoc",
     "experimental-jams"
-  ],
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.9.3"
-  }
+  ]
 }
