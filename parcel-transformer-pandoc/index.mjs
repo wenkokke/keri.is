@@ -31,7 +31,7 @@ function getOptions({ filePath, config }) {
   const relativeFilePath = path.relative(config.root, filePath);
   const [_glob, options] = Object.entries(config.options).find(
     ([glob, _options]) => isGlobMatch(relativeFilePath, glob)) ?? [undefined, {}];
-  return options
+  return Array.isArray(options) ? options : [options];
 }
 
 // Get the Pandoc reader for a given set of Pandoc CLI arguments and asset type.
@@ -123,27 +123,30 @@ export default new Transformer({
   },
   async transform({ asset, config, logger }) {
     // Determine the Pandoc CLI options.
-    const options = getOptions({ filePath: asset.filePath, config });
+    const sequentialOptions = getOptions({ filePath: asset.filePath, config });
 
-    // Determine the Pandoc reader & writer.
-    const reader = getReader({ options, type: asset.type });
-    const writer = getWriter({ options, type: asset.type });
+    // Run Pandoc with each set of options.
+    for (const options of sequentialOptions) {
 
-    // Determine dependencies.
-    addAssetDependencies({ asset, options, logger })
+      // Determine the Pandoc reader & writer.
+      const reader = getReader({ options, type: asset.type });
+      const writer = getWriter({ options, type: asset.type });
 
-    // Run Pandoc.
-    const input = await asset.getCode();
-    const renderedOptions = renderOptions({ ...omit(['from', 'to', 'read', 'write'], options), from: reader, to: writer });
-    const command = ['pandoc', ...renderedOptions].join(' ');
-    logger.verbose({ message: `Running '${command}'` });
-    const output = await execSync(command, { input, cwd: config.root, encoding: 'utf-8' });
-    logger.verbose({ message: `Done` });
-    asset.setCode(output);
+      // Determine dependencies.
+      addAssetDependencies({ asset, options, logger })
 
-    // Update the asset type based on the writer
-    asset.type = getAssetType({ writer });
+      // Run Pandoc.
+      const input = await asset.getCode();
+      const renderedOptions = renderOptions({ ...omit(['from', 'to', 'read', 'write'], options), from: reader, to: writer });
+      const command = ['pandoc', ...renderedOptions].join(' ');
+      logger.verbose({ message: `Running '${command}'` });
+      const output = await execSync(command, { input, cwd: config.root, encoding: 'utf-8' });
+      logger.verbose({ message: `Done` });
+      asset.setCode(output);
 
+      // Update the asset type based on the writer
+      asset.type = getAssetType({ writer });
+    }
     return [asset]
   }
 });
