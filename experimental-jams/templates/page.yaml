@@ -1,7 +1,3 @@
-author: "Keri Kokke"
-author-meta: "Keri Kokke"
-lang: "en-GB"
-
 # Configuration for Bubble filter
 bubble:
   blockquote: true

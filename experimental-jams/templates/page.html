@@ -1,58 +1,33 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="pandoc" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    ${ for(author-meta) }
-    <meta name="author" content="${ author-meta }" />
-    ${ endfor }${ if(date-meta) }
-    <meta name="dcterms.date" content="${ date-meta }" />
-    ${ endif }${ if(keywords) }
-    <meta
-      name="keywords"
-      content="${ for(keywords) }${ keywords }${ sep }, ${ endfor }"
-    />
-    ${ endif }${ if(description-meta) }
-    <meta name="description" content="${ description-meta }" />
+${ if(title) }
+<section class="hero is-primary">
+  ${ if(hero) }
+  <figure class="image is-16by9">
+    <picture>
+      <source srcset="${ hero }?as=avif&width=1920" type="image/avif" />
+      <source srcset="${ hero }?as=webp&width=1920" type="image/webp" />
+      <source srcset="${ hero }?as=jpeg&width=1920" type="image/jpeg" />
+      <source srcset="${ hero }?as=avif&width=970" type="image/avif" />
+      <source srcset="${ hero }?as=webp&width=970" type="image/webp" />
+      <source srcset="${ hero }?as=jpeg&width=970" type="image/jpeg" />
+      <source srcset="${ hero }?as=avif&width=300" type="image/avif" />
+      <source srcset="${ hero }?as=webp&width=300" type="image/webp" />
+      <source srcset="${ hero }?as=jpeg&width=300" type="image/jpeg" />
+      <img
+        src="${ hero }?as=jpeg&width=1920"
+        type="image/jpeg"
+        alt="Hero image"
+      />
+    </picture>
+  </figure>
+  ${ endif }
+  <div class="hero-body">
+    <p class="title">${ title }</p>
+    ${ if(subtitle) }
+    <p class="subtitle">${ subtitle }</p>
     ${ endif }
-    <title>${ pagetitle }${ if(subtitle) } – ${ subtitle }${ endif }</title>
-    <link rel="stylesheet" href="../styles/main.scss" />
-  </head>
-  <body>
-    ${ for(include-before) }${ include-before }${ endfor }${ if(title) }
-    <section class="hero is-primary">
-      ${ if(hero) }
-      <figure class="image is-16by9">
-        <picture>
-          <source srcset="${ hero }?as=avif&width=1920" type="image/avif" />
-          <source srcset="${ hero }?as=webp&width=1920" type="image/webp" />
-          <source srcset="${ hero }?as=jpeg&width=1920" type="image/jpeg" />
-          <source srcset="${ hero }?as=avif&width=970" type="image/avif" />
-          <source srcset="${ hero }?as=webp&width=970" type="image/webp" />
-          <source srcset="${ hero }?as=jpeg&width=970" type="image/jpeg" />
-          <source srcset="${ hero }?as=avif&width=300" type="image/avif" />
-          <source srcset="${ hero }?as=webp&width=300" type="image/webp" />
-          <source srcset="${ hero }?as=jpeg&width=300" type="image/jpeg" />
-          <img
-            src="${ hero }?as=jpeg&width=1920"
-            type="image/jpeg"
-            alt="Hero image"
-          />
-        </picture>
-      </figure>
-      ${ endif }
-      <div class="hero-body">
-        <p class="title">${ title }</p>
-        ${ if(subtitle) }
-        <p class="subtitle">${ subtitle }</p>
-        ${ endif }
-      </div>
-    </section>
-    ${ endif }
-    <section class="section">
-      <div class="container">${ body }</div>
-    </section>
-    ${ for(include-after) }${ include-after }${ endfor }
-  </body>
-</html>
+  </div>
+</section>
+${ endif }
+<section class="section">
+  <div class="container">${ body }</div>
+</section>
