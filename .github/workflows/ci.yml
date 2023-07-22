@@ -40,7 +40,7 @@ jobs:
           version: ${{ env.PANDOC_VERSION }}
 
       - name: Build Pages
-        run: npm ci && npm run build --workspace=experimental-jams --
+        run: npm ci && npm run build
         shell: bash
 
   deploy:
