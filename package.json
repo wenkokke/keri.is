@@ -1,16 +1,22 @@
 {
   "private": true,
   "name": "keri.is",
+  "version": "0.1.0",
   "scripts": {
-    "build": "npm run build:card && npm run build:experimental-jams",
-    "build:card": "npm run build --workspace=card",
-    "build:experimental-jams": "npm run build --workspace=experimental-jams"
+    "dev": "parcel index.md",
+    "build": "parcel build index.md"
   },
-  "workspaces": [
-    "card",
-    "experimental-jams",
-    "parcel-transformer-pandoc"
-  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@gatsbyjs/parcel-namer-relative-to-cwd": "^2.11.0",
+    "@parcel/transformer-sass": "^2.9.3",
+    "bulma": "^0.9.4",
+    "parcel": "^2.9.3",
+    "parcel-namer-rewrite": "^2.0.0-rc.3",
+    "parcel-transformer-pandoc": "*",
+    "sharp": "^0.31.3"
+  },
   "parcel-namer-rewrite": {
     "chain": "@parcel/namer-default",
     "hashing": "always",

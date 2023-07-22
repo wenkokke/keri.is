@@ -1,0 +1,41 @@
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      ${ if(image) }
+      <div class="level">
+        <div class="level-item has-text-centered">
+          <figure class="image is-128x128">
+            <img class="is-rounded" src="${ image }">
+          </figure>
+        </div>
+      </div>
+      ${ endif }
+      <p class="title">
+        ${ title }
+      </p>
+      ${ if(subtitle) }
+      <p class="subtitle">
+        ${ subtitle }
+      </p>
+      ${ endif }
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-gapless">
+      <div class="column is-2"></div>
+      <div class="column is-8">
+        ${ for(links) }
+        <a class="box">
+          ${ if(it.icon) }
+          <i class="${ it.icon }"></i>
+          ${ endif }
+          ${ it.name }
+        </a>
+        ${ endfor }
+      </div>
+      <div class="column is-2"></div>
+    </div>
+  </div>
+</section>
