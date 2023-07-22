@@ -1,7 +1,0 @@
-# Configuration for Bubble filter
-bubble:
-  blockquote: true
-  Sam:
-    style: "bottom-left"
-  Cat:
-    style: "bottom-right"

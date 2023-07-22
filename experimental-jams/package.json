@@ -1,10 +1,10 @@
 {
   "private": true,
-  "name": "site",
+  "name": "experimental-jams",
   "version": "0.1.0",
   "scripts": {
-    "dev": "parcel index.md",
-    "build": "parcel build index.md --dist-dir=../dist/experimental-jams --public-url=/experimental-jams"
+    "dev": "parcel index.md --public-url ./",
+    "build": "parcel build index.md --dist-dir ../dist/experimental-jams --public-url ./experimental-jams"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {

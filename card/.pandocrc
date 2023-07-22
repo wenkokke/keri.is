@@ -2,8 +2,7 @@
   "index.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/page.html",
-      "metadata-file": "${.}/templates/page.yaml",
+      "template": "${.}/templates/card.html",
       "write": "${.}/../pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
