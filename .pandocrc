@@ -1,28 +1,15 @@
 {
-  "index.md": [
-    {
-      "standalone": true,
-      "template": "${.}/templates/card.html",
-      "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
-    },
-    {
-      "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
-      "standalone": true,
-      "template": "${.}/templates/default.html",
-      "metadata-file": "${.}/templates/default.yaml"
-    }
-  ],
   "experimental-jams/index.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/index.html",
+      "template": "${.}/templates/experimental-jams/index.html",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
       "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
       "standalone": true,
-      "template": "${.}/templates/page.html",
-      "metadata-file": "${.}/templates/page.yaml",
+      "template": "${.}/templates/experimental-jams/page.html",
+      "metadata-file": "${.}/templates/experimental-jams/page.yaml",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
@@ -35,9 +22,23 @@
   "experimental-jams/*.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/page.html",
+      "template": "${.}/templates/experimental-jams/page.html",
       "lua-filter": "${.}/pandoc-filters/bubble/bubble.lua",
-      "metadata-file": "${.}/templates/page.yaml",
+      "metadata-file": "${.}/templates/experimental-jams/page.yaml",
+      "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
+    },
+    {
+      "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
+      "standalone": true,
+      "template": "${.}/templates/default.html",
+      "metadata-file": "${.}/templates/default.yaml"
+    }
+  ],
+  "index.md": [
+    {
+      "standalone": true,
+      "template": "${.}/templates/index.html",
+      "lua-filter": "${.}/pandoc-filters/bubble/bubble.lua",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {

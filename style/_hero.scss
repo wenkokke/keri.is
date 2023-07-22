@@ -5,7 +5,7 @@
   background-attachment: fixed;
   background-size: 120% auto;
 }
-.hero-image-strawberry-disaster {
+.strawberry-disaster {
   @include mobile {
     background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1024");
   }

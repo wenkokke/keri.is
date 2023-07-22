@@ -1,16 +1,16 @@
 @charset "utf-8";
 
 /* Font Awesome */
-$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
-@import "@fortawesome/fontawesome-free/scss/fontawesome";
-@import "@fortawesome/fontawesome-free/scss/brands";
-@import "@fortawesome/fontawesome-free/scss/solid";
+$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
 
 /* Colors */
 @import "colors";
 
 /* Bulma */
-@import "bulma/bulma";
+@import "../node_modules/bulma/bulma";
 
 /* Speech Bubbles */
 @import "bubble";

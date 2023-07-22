@@ -8,7 +8,6 @@
   },
   "namers": [
     "@gatsbyjs/parcel-namer-relative-to-cwd",
-    "parcel-namer-rewrite",
     "..."
   ]
 }

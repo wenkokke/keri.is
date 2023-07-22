@@ -13,16 +13,7 @@
     "@parcel/transformer-sass": "^2.9.3",
     "bulma": "^0.9.4",
     "parcel": "^2.9.3",
-    "parcel-namer-rewrite": "^2.0.0-rc.3",
     "parcel-transformer-pandoc": "github:wenkokke/parcel-transformer-pandoc",
     "sharp": "^0.31.3"
-  },
-  "parcel-namer-rewrite": {
-    "chain": "@parcel/namer-default",
-    "hashing": "always",
-    "rules": {
-      "index.html$": "index.html",
-      "(.*).html$": "$1/index.html"
-    }
   }
 }
