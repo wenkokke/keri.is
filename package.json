@@ -13,8 +13,8 @@
     "chain": "@parcel/namer-default",
     "hashing": "always",
     "rules": {
-      "index.html": "index.html",
-      "(.*).html": "$1/index.html"
+      "index.html$": "index.html",
+      "(.*).html$": "$1/index.html"
     }
   }
 }

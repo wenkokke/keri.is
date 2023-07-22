@@ -1,5 +1,5 @@
 ${ if(title) }
-<section class="hero is-medium is-primary"${ if(hero)} style="background-image: url('${ hero }?as=jpeg'); background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"${endif}>
+<section class="hero is-primary${ if(hero)} hero-image hero-image-${ hero }${endif}">
     <div class="hero-body">
       <p class="title">${ title }</p>
       ${ if(subtitle) }

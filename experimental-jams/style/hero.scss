@@ -1,6 +1,15 @@
 .hero-image {
-  background-position: center center;
+  @extend .is-medium;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 120% auto;
+}
+.hero-image-strawberry-disaster {
+  @include mobile {
+    background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1024");
+  }
+  @include tablet {
+    background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1920");
+  }
 }

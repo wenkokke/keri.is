@@ -40,3 +40,8 @@ $text-strong: findDarkColor($text);
 $text-invert: findColorInvert($text);
 $text-invert-light: findColorInvert($text-light);
 $text-invert-strong: findColorInvert($text-strong);
+
+// Cards
+$card-background-color: $primary;
+$card-color: $text-invert;
+$card-header-color: $text-invert-strong;
