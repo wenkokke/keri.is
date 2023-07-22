@@ -33,7 +33,7 @@
         ${ for(links) }
         <a class="box notification is-info" title="${ it.name }" href="${ it.href }">
           ${ if(it.icon) }
-          <i class="${ it.icon }" alt="${ it.name }"></i>
+          <i class="${ it.icon }" aria-label="${ it.name }"></i>
           ${ endif }
           <strong>${ it.site }</strong>
         </a>

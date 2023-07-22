@@ -1,7 +1,7 @@
 ---
 title: "Strawberry Disaster"
-subtitle: "Experimental Jam #1"
-hero-class: "strawberry-disaster"
+subtitle: "#1"
+hero: "strawberry-disaster"
 ---
 
 Let's talk about Strawberry Disaster!
