@@ -2,33 +2,46 @@
   "index.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/index.html",
-      "write": "${.}/../pandoc-filters/html_metadata_block/html_metadata_block.lua"
+      "template": "${.}/templates/card.html",
+      "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
-      "read": "${.}/../pandoc-filters/raw_html/raw_html.lua",
-      "standalone": true,
-      "template": "${.}/templates/page.html",
-      "metadata-file": "${.}/templates/page.yaml",
-      "write": "${.}/../pandoc-filters/html_metadata_block/html_metadata_block.lua"
-    },
-    {
-      "read": "${.}/../pandoc-filters/raw_html/raw_html.lua",
+      "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
       "standalone": true,
       "template": "${.}/templates/default.html",
       "metadata-file": "${.}/templates/default.yaml"
     }
   ],
-  "*.md": [
+  "experimental-jams/index.md": [
+    {
+      "standalone": true,
+      "template": "${.}/templates/index.html",
+      "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
+    },
+    {
+      "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
+      "standalone": true,
+      "template": "${.}/templates/page.html",
+      "metadata-file": "${.}/templates/page.yaml",
+      "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
+    },
+    {
+      "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
+      "standalone": true,
+      "template": "${.}/templates/default.html",
+      "metadata-file": "${.}/templates/default.yaml"
+    }
+  ],
+  "experimental-jams/*.md": [
     {
       "standalone": true,
       "template": "${.}/templates/page.html",
-      "lua-filter": "${.}/../pandoc-filters/bubble/bubble.lua",
+      "lua-filter": "${.}/pandoc-filters/bubble/bubble.lua",
       "metadata-file": "${.}/templates/page.yaml",
-      "write": "${.}/../pandoc-filters/html_metadata_block/html_metadata_block.lua"
+      "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
-      "read": "${.}/../pandoc-filters/raw_html/raw_html.lua",
+      "read": "${.}/pandoc-filters/raw_html/raw_html.lua",
       "standalone": true,
       "template": "${.}/templates/default.html",
       "metadata-file": "${.}/templates/default.yaml"
