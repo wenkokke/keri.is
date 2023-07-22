@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "card",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "parcel index.md",
+    "build": "parcel build index.md --dist-dir=../dist/"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "@gatsbyjs/parcel-namer-relative-to-cwd": "^2.11.0",
+    "@parcel/transformer-sass": "^2.9.3",
+    "bulma": "^0.9.4",
+    "parcel": "^2.9.3",
+    "parcel-namer-rewrite": "^2.0.0-rc.3",
+    "parcel-transformer-pandoc": "*",
+    "sharp": "^0.31.3"
+  }
+}
