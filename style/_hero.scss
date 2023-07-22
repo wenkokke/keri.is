@@ -5,11 +5,45 @@
   background-attachment: fixed;
   background-size: 120% auto;
 }
+
+/* strawberry disaster */
 .strawberry-disaster {
+  /* 
+      The image is 1920x1080 with a resolution of 72dpi or 0.75x.
+
+      The mobile breakpoint scales up to 768px.
+      Therefore, in the worst case:
+
+        1x     = (1     / 0.75) * 768 = 1024
+        1.875x = (1.875 / 0.75) * 768 = 1920
+
+      The tablet breakpoint starts from 769px.
+      The hero is within a container that doesn't grow past 960px.
+      Therefore, we can offer the following sizes:
+
+        1x   = (1   / 0.75) * 960 = 1280
+        1.5x = (1.5 / 0.75) * 960 = 1920
+  */
   @include mobile {
     background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1024");
+    background-image: -webkit-image-set(
+      url("../images/strawberry-disaster.png?as=jpeg&width=1024") 1x,
+      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.875x
+    );
+    background-image: image-set(
+      url("../images/strawberry-disaster.png?as=jpeg&width=1024") 1x,
+      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.875x
+    );
   }
   @include tablet {
     background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1920");
+    background-image: -webkit-image-set(
+      url("../images/strawberry-disaster.png?as=jpeg&width=1280") 1x,
+      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.5x
+    );
+    background-image: image-set(
+      url("../images/strawberry-disaster.png?as=jpeg&width=1280") 1x,
+      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.5x
+    );
   }
 }
