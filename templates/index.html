@@ -1,11 +1,11 @@
-<section class="hero is-primary is-medium">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      ${ if(image) }
+<section class="hero is-primary">
+  <div class="container has-text-centered">
+    <div class="hero-body">
+      ${ if(profile) }
       <div class="level">
         <div class="level-item has-text-centered">
-          <figure class="image is-128x128">
-            <img class="is-rounded" src="${ image }">
+          <figure class="image profile is-128x128">
+            <img class="is-rounded" src="${ profile }?as=jpeg">
           </figure>
         </div>
       </div>
@@ -27,11 +27,11 @@
       <div class="column is-2"></div>
       <div class="column is-8">
         ${ for(links) }
-        <a class="box">
+        <a class="box notification is-info" title="${ it.name }" href="${ it.href }">
           ${ if(it.icon) }
-          <i class="${ it.icon }"></i>
+          <i class="${ it.icon }" alt="${ it.name }"></i>
           ${ endif }
-          ${ it.name }
+          <strong>${ it.site }</strong>
         </a>
         ${ endfor }
       </div>
