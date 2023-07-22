@@ -1,0 +1,42 @@
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+/* Strawberry Disaster Palette */
+$jasper: #c24f3cff;
+$persian-red: #ca3c2e;
+$avocado: #717e32;
+$ultra-violet: #585191;
+$tekhelet: #4f359b;
+$pale-dogwood: #f4d6cc;
+$desert-sand: #d7b8a1ff;
+$raisin-black: #222228ff;
+$chocolate-cosmos: #591f25ff;
+$bole: #805044ff;
+$ash-gray: #abb6a9ff;
+$beaver: #bc8f79ff;
+$wenge: #514949ff;
+$paynes-gray: #576b70ff;
+
+/* Bulma Colors */
+$primary: $persian-red;
+$secondary: $ultra-violet;
+$tertiary: $avocado;
+$info: $pale-dogwood;
+$success: $avocado;
+$warning: $beaver;
+$danger: $chocolate-cosmos;
+$light: $pale-dogwood;
+$dark: $raisin-black;
+$scheme-main: $light;
+$scheme-main-ter: findLightColor($scheme-main);
+$scheme-main-bis: findDarkColor($scheme-main);
+$schema-invert: findColorInvert($scheme-main);
+$scheme-invert-ter: findLightColor($schema-invert);
+$scheme-invert-bis: findDarkColor($schema-invert);
+$background: $light;
+$text: $raisin-black;
+$text-light: findLightColor($text);
+$text-strong: findDarkColor($text);
+$text-invert: findColorInvert($text);
+$text-invert-light: findColorInvert($text-light);
+$text-invert-strong: findColorInvert($text-strong);
