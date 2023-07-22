@@ -27,23 +27,23 @@
   @include mobile {
     background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1024");
     background-image: -webkit-image-set(
-      url("../images/strawberry-disaster.png?as=jpeg&width=1024") 1x,
-      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.875x
+      url("../images/strawberry-disaster.png?as=webp&width=1024") 1x,
+      url("../images/strawberry-disaster.png?as=webp&width=1920") 1.875x
     );
     background-image: image-set(
-      url("../images/strawberry-disaster.png?as=jpeg&width=1024") 1x,
-      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.875x
+      url("../images/strawberry-disaster.png?as=webp&width=1024") 1x,
+      url("../images/strawberry-disaster.png?as=webp&width=1920") 1.875x
     );
   }
   @include tablet {
     background-image: url("../images/strawberry-disaster.png?as=jpeg&width=1920");
     background-image: -webkit-image-set(
-      url("../images/strawberry-disaster.png?as=jpeg&width=1280") 1x,
-      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.5x
+      url("../images/strawberry-disaster.png?as=webp&width=1280") 1x,
+      url("../images/strawberry-disaster.png?as=webp&width=1920") 1.5x
     );
     background-image: image-set(
-      url("../images/strawberry-disaster.png?as=jpeg&width=1280") 1x,
-      url("../images/strawberry-disaster.png?as=jpeg&width=1920") 1.5x
+      url("../images/strawberry-disaster.png?as=webp&width=1280") 1x,
+      url("../images/strawberry-disaster.png?as=webp&width=1920") 1.5x
     );
   }
 }
