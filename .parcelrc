@@ -5,9 +5,5 @@
       "parcel-transformer-pandoc",
       "..."
     ]
-  },
-  "namers": [
-    "@gatsbyjs/parcel-namer-relative-to-cwd",
-    "..."
-  ]
+  }
 }
