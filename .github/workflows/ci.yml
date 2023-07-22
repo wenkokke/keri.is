@@ -40,7 +40,7 @@ jobs:
           version: ${{ env.PANDOC_VERSION }}
 
       - name: Build Pages
-        run: npm i && npm run build
+        run: npm ci && npm i @parcel/watcher && npm run build
         shell: bash
 
   deploy:
@@ -83,7 +83,7 @@ jobs:
           version: ${{ env.PANDOC_VERSION }}
 
       - name: Build Pages
-        run: npm i && npm run build
+        run: npm ci && npm i @parcel/watcher && npm run build
         shell: bash
 
       - name: Setup Pages
