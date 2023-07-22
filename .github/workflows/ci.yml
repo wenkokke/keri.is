@@ -16,7 +16,7 @@ on:
 
 # Sets Node.js and Pandoc versions
 env:
-  NODEJS_VERSION: "16"
+  NODEJS_VERSION: "18"
   PANDOC_VERSION: "3.1.4"
 
 jobs:
