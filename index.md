@@ -2,12 +2,10 @@
 title: "Keri Kokke"
 profile: "images/profile.png"
 links:
-  - site: "Mastodon"
-    name: "\\@keri\\@where.keri.is"
-    href: "https://where.keri.is/\\@keri"
-    icon: "fa-brands fa-mastodon"
-  - site: "Instagram"
-    name: "\\@eeriekeri"
-    href: "https://instagram.com/eeriekeri"
-    icon: "fa-brands fa-instagram"
+  - brand: "Mastodon"
+    handle: "\\@keri\\@where.keri.is"
+    url: "https://where.keri.is/\\@keri"
+  - brand: "Instagram"
+    handle: "\\@eeriekeri"
+    url: "https://instagram.com/eeriekeri"
 ---

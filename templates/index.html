@@ -31,11 +31,11 @@
     <div class="columns is-desktop is-centered">
       <div class="column is-four-fifths">
         ${ for(links) }
-        <a class="box notification is-info" title="${ it.name }" href="${ it.href }">
-          ${ if(it.icon) }
-          <i class="${ it.icon }" aria-label="${ it.name }"></i>
+        <a class="box notification is-info" title="${ it.handle }" href="${ it.url }">
+          ${ if(it.brand) }
+          <i class="fa-brands fa-${ it.brand/lowercase }" aria-label="${ it.brand/lowercase }"></i>
           ${ endif }
-          <strong>${ it.site }</strong>
+          <strong>${ it.brand }</strong>
         </a>
         ${ endfor }
       </div>
