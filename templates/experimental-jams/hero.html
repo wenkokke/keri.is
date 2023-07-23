@@ -1,0 +1,21 @@
+${ if(title) }
+<section class="hero is-primary${ if(hero)} hero-image ${ hero }${endif}">
+    <div class="hero-body">
+      <div class="level is-mobile">
+        <div class="level-left">
+          <div class="level-item">
+            <p class="title">${ title }</p>
+          </div>
+        </div>
+        ${ if(subtitle) }
+        <div class="level-right">
+          <div class="level-item">
+            <p class="subtitle">${ subtitle }</p>
+          </div>
+        </div>
+        ${ endif }
+      </div>
+    </div>
+  </div>
+</section>
+${ endif }

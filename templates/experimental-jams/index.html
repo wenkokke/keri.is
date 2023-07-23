@@ -1,65 +1,45 @@
-${ if(title) }
-<section class="hero is-medium is-primary${ if(hero-class)} hero-image ${ hero-class }${endif}">
-    <div class="hero-body">
-      <div class="level is-mobile">
-        <div class="level-left">
-          <div class="level-item">
-            <p class="title">${ title }</p>
-          </div>
-        </div>
-        ${ if(subtitle) }
-        <div class="level-right">
-          <div class="level-item">
-            <p class="subtitle">${ subtitle }</p>
-          </div>
-        </div>
-        ${ endif }
-      </div>
-    </div>
-  </div>
-</section>
-${ endif }
+${ hero() }
 <section class="section">
   <div class="container is-desktop">
-    <div class="tile is-ancestor">
-      <div class="tile is-4 is-parent">
-        ${ for(experimental-jams) }
-        <a class="tile is-child card" href="${ it.href }">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <picture>
-                <source
-                  srcset="../images/${ it.hero }.png?as=jpeg&width=1920"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="../images/${ it.hero }.png?as=jpeg&width=1280"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="../images/${ it.hero }.png?as=jpeg&width=768"
-                  type="image/jpeg"
-                />
-                <img
-                  src="../images/${ it.hero }.png?as=jpeg&width=1920"
-                  type="image/jpeg"
-                  alt="Hero image"
-                />
-              </picture>
-            </figure>
+    <div class="columns is-desktop is-centered">
+      <div class="column is-four-fifths">
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-parent">
+            ${ for(experimental-jams) }
+            <a class="tile is-child card" href="${ it.href }">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <picture>
+                    <source
+                      srcset="../images/${ it.hero }.png?as=jpeg&width=1920"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="../images/${ it.hero }.png?as=jpeg&width=1280"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="../images/${ it.hero }.png?as=jpeg&width=768"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="../images/${ it.hero }.png?as=jpeg&width=1920"
+                      type="image/jpeg"
+                      alt="Hero image"
+                    />
+                  </picture>
+                </figure>
+              </div>
+              <div class="card-header">
+                <p class="card-header-title">${ it.title }</p>
+                <div class="card-header-icon" aria-hidden="true">
+                  <span class="icon"> ${ it.subtitle } </span>
+                </div>
+              </div>
+            </a>
+            ${ endfor }
           </div>
-          <div class="card-header">
-            <p class="card-header-title">
-              ${ it.title }
-            </p>
-            <div class="card-header-icon" aria-hidden="true">
-              <span class="icon">
-                ${ it.subtitle }
-              </span>
-            </div>
-          </div>
-        </a>
-        ${ endfor }
+        </div>
       </div>
     </div>
   </div>

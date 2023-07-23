@@ -1,5 +1,6 @@
 ---
 title: "Experimental Jams"
+hero: "experimental-jams"
 experimental-jams:
   - title: "Strawberry Disaster"
     subtitle: "#1"
