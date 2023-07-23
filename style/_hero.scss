@@ -14,36 +14,42 @@
     @if $targetWidth1x <= $sourceWidth {
       $imageSetList: append(
         $imageSetList,
-        url("#{$url}?as=webp&width=#{$targetWidth1x}") 1x
+        url("#{$url}?as=webp&width=#{$targetWidth1x}") 1x,
+        comma
       );
       // 2x
       @if $targetWidth2x <= $sourceWidth {
         $imageSetList: append(
           $imageSetList,
-          url("#{$url}?as=webp&width=#{$targetWidth2x}") 1x
+          url("#{$url}?as=webp&width=#{$targetWidth2x}") 1x,
+          comma
         );
         // 3x
         @if $targetWidth3x <= $sourceWidth {
           $imageSetList: append(
             $imageSetList,
-            url("#{$url}?as=webp&width=#{$targetWidth3x}") 1x
+            url("#{$url}?as=webp&width=#{$targetWidth3x}") 1x,
+            comma
           );
         } @else {
           $imageSetList: append(
             $imageSetList,
-            url("#{$url}?as=webp") $sourceDppx + x
+            url("#{$url}?as=webp") $sourceDppx + x,
+            comma
           );
         }
       } @else {
         $imageSetList: append(
           $imageSetList,
-          url("#{$url}?as=webp") $sourceDppx + x
+          url("#{$url}?as=webp") $sourceDppx + x,
+          comma
         );
       }
     } @else {
       $imageSetList: append(
         $imageSetList,
-        url("#{$url}?as=webp") $sourceDppx + x
+        url("#{$url}?as=webp") $sourceDppx + x,
+        comma
       );
     }
     background-image: url("#{$url}?as=jpeg&width=#{$targetWidth1x}");
@@ -61,36 +67,42 @@
     @if $targetWidth1x <= $sourceWidth {
       $imageSetList: append(
         $imageSetList,
-        url("#{$url}?as=webp&width=#{$targetWidth1x}") 1x
+        url("#{$url}?as=webp&width=#{$targetWidth1x}") 1x,
+        comma
       );
       // 2x
       @if $targetWidth2x <= $sourceWidth {
         $imageSetList: append(
           $imageSetList,
-          url("#{$url}?as=webp&width=#{$targetWidth2x}") 1x
+          url("#{$url}?as=webp&width=#{$targetWidth2x}") 1x,
+          comma
         );
         // 3x
         @if $targetWidth3x <= $sourceWidth {
           $imageSetList: append(
             $imageSetList,
-            url("#{$url}?as=webp&width=#{$targetWidth3x}") 1x
+            url("#{$url}?as=webp&width=#{$targetWidth3x}") 1x,
+            comma
           );
         } @else {
           $imageSetList: append(
             $imageSetList,
-            url("#{$url}?as=webp") $sourceDppx + x
+            url("#{$url}?as=webp") $sourceDppx + x,
+            comma
           );
         }
       } @else {
         $imageSetList: append(
           $imageSetList,
-          url("#{$url}?as=webp") $sourceDppx + x
+          url("#{$url}?as=webp") $sourceDppx + x,
+          comma
         );
       }
     } @else {
       $imageSetList: append(
         $imageSetList,
-        url("#{$url}?as=webp") $sourceDppx + x
+        url("#{$url}?as=webp") $sourceDppx + x,
+        comma
       );
     }
     background-image: url("#{$url}?as=jpeg&width=#{$targetWidth1x}");
