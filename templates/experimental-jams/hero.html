@@ -1,20 +1,27 @@
 ${ if(title) }
-<section class="hero${ if(hero)} hero-image ${ hero }${endif}">
-    <div class="hero-body">
-      <div class="level is-mobile">
-        <div class="level-left">
-          <div class="level-item">
-            <p class="title">${ title }</p>
-          </div>
+<section class="hero is-primary">
+  <!-- Hero head: will stick at the top -->
+  ${ if(hero) }
+  <div class="hero-head">
+    <figure class="image is-16by9">${ hero:navbar() }</figure>
+  </div>
+  ${ endif }
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          <p class="title">${ title }</p>
         </div>
-        ${ if(subtitle) }
-        <div class="level-right">
-          <div class="level-item">
-            <p class="subtitle">${ subtitle }</p>
-          </div>
-        </div>
-        ${ endif }
       </div>
+      ${ if(subtitle) }
+      <div class="level-right">
+        <div class="level-item">
+          <p class="subtitle">${ subtitle }</p>
+        </div>
+      </div>
+      ${ endif }
     </div>
   </div>
 </section>
