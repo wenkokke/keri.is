@@ -109,14 +109,14 @@
     background-image: -webkit-image-set($imageSetList) !important;
     background-image: image-set($imageSetList) !important;
   }
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* Hero & Navbar */
 .hero .navbar {
   @extend .is-16by9;
   @extend .has-ratio;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero .navbar .navbar-burger {
   @include desktop {
@@ -138,6 +138,9 @@
     bottom: 0;
     right: 0;
   }
+}
+.navbar-dropdown {
+  background-color: $primary;
 }
 
 /* experimental jams */
