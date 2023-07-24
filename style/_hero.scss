@@ -111,9 +111,27 @@
   }
 }
 
+.hero-body {
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+}
+
+.hero-body .title {
+  color: $text-invert-strong;
+  text-shadow: -1px -1px 0 $text-strong, 1px -1px 0 $text-strong,
+    -1px 1px 0 $text-strong, 1px 1px 0 $text-strong;
+}
+
+.hero-body .subtitle {
+  color: $text-invert-strong;
+  text-shadow: -1px -1px 0 $text-strong, 1px -1px 0 $text-strong,
+    -1px 1px 0 $text-strong, 1px 1px 0 $text-strong;
+}
+
 .hero-image {
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 
 /* experimental jams */
@@ -125,5 +143,5 @@
 /* strawberry disaster */
 .strawberry-disaster {
   @include heroBackgroundImage("../images/strawberry-disaster.png", 1920, 0.75);
-  background-position: top;
+  background-position: center;
 }
