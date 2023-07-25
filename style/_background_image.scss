@@ -1,0 +1,120 @@
+@use "sass:list";
+@use "sass:math";
+@use "sass:string";
+
+@mixin backgroundImage($url, $sourceWidth, $sourceDppx) {
+  @include mobile {
+    $targetWidth: 768;
+    $targetDppxAtSourceWidth: math.div($sourceWidth, $targetWidth) * $sourceDppx;
+    $targetWidth1x: math.div(1, $sourceDppx) * $targetWidth;
+    $targetWidth2x: math.div(2, $sourceDppx) * $targetWidth;
+    $targetWidth3x: math.div(3, $sourceDppx) * $targetWidth;
+    $imageSetList: ();
+    // 1x
+    @if $targetWidth1x <= $sourceWidth {
+      $imageSetList: append(
+        $imageSetList,
+        url("#{$url}?as=webp&width=#{$targetWidth1x}") 1x,
+        comma
+      );
+      // 2x
+      @if $targetWidth2x <= $sourceWidth {
+        $imageSetList: append(
+          $imageSetList,
+          url("#{$url}?as=webp&width=#{$targetWidth2x}") 1x,
+          comma
+        );
+        // 3x
+        @if $targetWidth3x <= $sourceWidth {
+          $imageSetList: append(
+            $imageSetList,
+            url("#{$url}?as=webp&width=#{$targetWidth3x}") 1x,
+            comma
+          );
+        } @else {
+          $imageSetList: append(
+            $imageSetList,
+            url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
+            comma
+          );
+        }
+      } @else {
+        $imageSetList: append(
+          $imageSetList,
+          url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
+          comma
+        );
+      }
+    } @else {
+      $imageSetList: append(
+        $imageSetList,
+        url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
+        comma
+      );
+    }
+    background-image: url("#{$url}?as=jpeg&width=#{$targetWidth1x}") !important;
+    background-image: -webkit-image-set($imageSetList) !important;
+    background-image: image-set($imageSetList) !important;
+  }
+  @include tablet {
+    $targetWidth: 960;
+    $targetDppxAtSourceWidth: math.div($sourceWidth, $targetWidth) * $sourceDppx;
+    $targetWidth1x: math.div(1, $sourceDppx) * $targetWidth;
+    $targetWidth2x: math.div(2, $sourceDppx) * $targetWidth;
+    $targetWidth3x: math.div(3, $sourceDppx) * $targetWidth;
+    $imageSetList: ();
+    // 1x
+    @if $targetWidth1x <= $sourceWidth {
+      $imageSetList: append(
+        $imageSetList,
+        url("#{$url}?as=webp&width=#{$targetWidth1x}") 1x,
+        comma
+      );
+      // 2x
+      @if $targetWidth2x <= $sourceWidth {
+        $imageSetList: append(
+          $imageSetList,
+          url("#{$url}?as=webp&width=#{$targetWidth2x}") 1x,
+          comma
+        );
+        // 3x
+        @if $targetWidth3x <= $sourceWidth {
+          $imageSetList: append(
+            $imageSetList,
+            url("#{$url}?as=webp&width=#{$targetWidth3x}") 1x,
+            comma
+          );
+        } @else {
+          $imageSetList: append(
+            $imageSetList,
+            url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
+            comma
+          );
+        }
+      } @else {
+        $imageSetList: append(
+          $imageSetList,
+          url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
+          comma
+        );
+      }
+    } @else {
+      $imageSetList: append(
+        $imageSetList,
+        url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
+        comma
+      );
+    }
+    background-image: url("#{$url}?as=jpeg&width=#{$targetWidth1x}") !important;
+    background-image: -webkit-image-set($imageSetList) !important;
+    background-image: image-set($imageSetList) !important;
+  }
+  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* strawberry disaster */
+.strawberry-disaster {
+  @include backgroundImage("../images/strawberry-disaster.png", 1920, 0.75);
+}
