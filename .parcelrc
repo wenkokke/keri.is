@@ -6,8 +6,7 @@
       "..."
     ],
     "*.{dot,gv}": [
-      "parcel-transformer-graphviz",
-      "..."
+      "parcel-transformer-graphviz"
     ]
   },
   "namers": [

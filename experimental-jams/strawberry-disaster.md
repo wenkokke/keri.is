@@ -1,9 +1,11 @@
 ---
 title: "Strawberry Disaster"
 subtitle: "#1"
-flowchart: "./strawberry-disaster.dot"
+flowchart: "./strawberry-disaster-flowchart.dot"
 background-image: "strawberry-disaster"
 ---
+
+<img src="./strawberry-disaster-flowchart.dot" />
 
 ## Suggestion
 
