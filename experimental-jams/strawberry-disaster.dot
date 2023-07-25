@@ -1,0 +1,41 @@
+digraph {
+  compound = true;
+  layout = "dot";
+  margin = 0;
+  rank = "same";
+  rankdir = "LR";
+  
+  node [shape = rect;];
+  
+  subgraph opener {
+    label = "Opening";
+    cluster = true;
+    margin = 25;
+    
+    m4 [label = "Monologue 4";shape = rect;];
+    m3 [label = "Monologue 3";shape = rect;];
+    m2 [label = "Monologue 2";shape = rect;];
+    m1 [label = "Monologue 1";shape = rect;];
+  }
+  
+  m1:e -> m2:w;
+  m2:e -> m3:w;
+  m3:e -> m4:w;
+  
+  subgraph first_beats {
+    label = "First Beats";
+    cluster = true;
+    margin = 25;
+    
+    s1 [label = "Scene 1";shape = rect;];
+    s2 [label = "Scene 2";shape = rect;];
+    s3 [label = "Scene 3";shape = rect;];
+    s4 [label = "Scene 4";shape = rect;];
+  }
+  
+  m4:s -> s1:n [constraint = false; ltail = opener; lhead = first_beats;];
+  
+  s1:e -> s2:w;
+  s2:e -> s3:w;
+  s3:e -> s4:w;
+}

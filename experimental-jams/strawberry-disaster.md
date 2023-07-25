@@ -1,6 +1,7 @@
 ---
 title: "Strawberry Disaster"
 subtitle: "#1"
+flowchart: "./strawberry-disaster.dot"
 background-image: "strawberry-disaster"
 ---
 
@@ -19,7 +20,7 @@ The suggestion should either _be_ or _inspire_ a genre.
 >
 > Cat: My husband found out I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand, I did it for us! I don't know what I'd do if he left me...
 >
-> Mac: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—Cat thinks she's still too young—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
+> Mac: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—Cat thinks she's still too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
 >
 > Tay: C
 
