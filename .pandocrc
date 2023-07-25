@@ -1,5 +1,5 @@
 {
-  "experimental-jams/index.md": [
+  "experimental-jams.md": [
     {
       "standalone": true,
       "template": "${.}/templates/experimental-jams.html",

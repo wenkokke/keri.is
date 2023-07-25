@@ -3,8 +3,8 @@
   "name": "keri.is",
   "version": "0.1.0",
   "scripts": {
-    "dev": "parcel index.md experimental-jams/index.md ",
-    "build": "parcel build index.md experimental-jams/index.md"
+    "dev": "parcel index.md experimental-jams.md ",
+    "build": "parcel build index.md experimental-jams.md"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {

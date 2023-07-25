@@ -8,9 +8,9 @@ experimental-jams:
     background-image: "strawberry-disaster"
 navbar-items:
   - title: "keri.is"
-    url: "/"
+    url: "/index.md"
   - title: "Experimental Jams"
-    url: "/experimental-jams/"
+    url: "/experimental-jams.md"
     dropdown-items:
       - title: "Strawberry Disaster"
         url: "/experimental-jams/strawberry-disaster.md"
