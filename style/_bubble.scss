@@ -65,3 +65,15 @@
 .bubble.bubble-Cat:after {
   border-top-color: $info;
 }
+.bubble.bubble-Mac {
+  background-color: $success;
+}
+.bubble.bubble-Mac:after {
+  border-top-color: $success;
+}
+.bubble.bubble-Tay {
+  background-color: $warning;
+}
+.bubble.bubble-Tay:after {
+  border-top-color: $warning;
+}

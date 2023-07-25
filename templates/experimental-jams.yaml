@@ -19,9 +19,9 @@ bubble:
   blockquote: true
   Sam:
     style: "bottom-left"
-  Mac:
-    style: "left"
   Cat:
     style: "bottom-right"
+  Mac:
+    style: "bottom-left"
   Tay:
-    style: "right"
+    style: "bottom-right"

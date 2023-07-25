@@ -4,6 +4,13 @@
     "*.md": [
       "parcel-transformer-pandoc",
       "..."
+    ],
+    "*.{dot,gv}": [
+      "parcel-transformer-graphviz",
+      "..."
     ]
-  }
+  },
+  "namers": [
+    "parcel-namer-rewrite"
+  ]
 }

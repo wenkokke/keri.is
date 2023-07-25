@@ -12,8 +12,8 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
 /* Bulma */
 @import "../node_modules/bulma/bulma";
 
-/* Basic Style */
-@import "basic";
+/* Style the basic tags emitted by Pandoc */
+@import "pandoc";
 
 /* Background Images */
 @import "background-image";

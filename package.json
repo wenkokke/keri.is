@@ -14,8 +14,18 @@
     "bulma": "^0.9.4",
     "lightningcss": "^1.21.5",
     "parcel": "^2.9.3",
+    "parcel-namer-rewrite": "^2.0.0-rc.3",
+    "parcel-transformer-graphviz": "^0.1.2",
     "parcel-transformer-pandoc": "github:wenkokke/parcel-transformer-pandoc",
     "sass": "^1.64.1",
     "sharp": "^0.31.3"
+  },
+  "parcel-namer-rewrite": {
+    "chain": "@parcel/namer-default",
+    "hashing": "always",
+    "rules": {
+      "index.html": "index.html",
+      "(.*).html": "$1/index.html"
+    }
   }
 }
