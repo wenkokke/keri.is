@@ -17,6 +17,7 @@
     "parcel-namer-rewrite": "^2.0.0-rc.3",
     "parcel-transformer-graphviz": "^0.1.2",
     "parcel-transformer-pandoc": "github:wenkokke/parcel-transformer-pandoc",
+    "parcel-transformer-rough-svg": "^0.1.2",
     "sass": "^1.64.1",
     "sharp": "^0.31.3"
   },
