@@ -11,7 +11,7 @@ navbar-items:
     url: "/"
   - title: "Experimental Jams"
     url: "/experimental-jams/"
-    dropdown:
+    dropdown-items:
       - title: "Strawberry Disaster"
         url: "/experimental-jams/strawberry-disaster.md"
 
