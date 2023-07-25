@@ -1,6 +1,4 @@
 digraph {
-  node [fontname = "Handlee";];
-  
   clusterrank = local;
   compound = true;
   layout = "dot";
@@ -13,7 +11,7 @@ digraph {
     margin = 25;
     style = invis;
     
-    sg [label = "The Suggestion";shape = rect;];
+    sg [label = "The Suggestion";shape = rect;id = "sg";];
   }
   
   sg:s -> m1:n;
@@ -23,10 +21,10 @@ digraph {
     margin = 25;
     style = invis;
     
-    m1 [label = "Monologue A";shape = rect;];
-    m2 [label = "Monologue B";shape = rect;];
-    m3 [label = "Monologue C";shape = rect;];
-    m4 [label = "Monologue D";shape = rect;];
+    m1 [label = "Monologue A";shape = rect;id = "m1";];
+    m2 [label = "Monologue B";shape = rect;id = "m2";];
+    m3 [label = "Monologue C";shape = rect;id = "m3";];
+    m4 [label = "Monologue D";shape = rect;id = "m4";];
   }
   
   m1:e -> m2:w;
@@ -38,10 +36,10 @@ digraph {
     margin = 25;
     style = invis;
     
-    fb1 [label = "1st Beat A/B";shape = rect;];
-    fb2 [label = "1st Beat B/C";shape = rect;];
-    fb3 [label = "1st Beat C/D";shape = rect;];
-    fb4 [label = "1st Beat D/A";shape = rect;];
+    fb1 [label = "1st Beat A/B";shape = rect;id = "fb1";];
+    fb2 [label = "1st Beat B/C";shape = rect;id = "fb2";];
+    fb3 [label = "1st Beat C/D";shape = rect;id = "fb3";];
+    fb4 [label = "1st Beat D/A";shape = rect;id = "fb4";];
   }
   
   m4:s -> fb1:n [constraint = false;];
@@ -55,7 +53,7 @@ digraph {
     margin = 25;
     style = invis;
     
-    tt [label = "The Tilt";shape = rect;];
+    tt [label = "The Tilt";shape = rect;id = "tt";];
   }
   
   fb4:s -> tt:n;
@@ -65,10 +63,10 @@ digraph {
     margin = 25;
     style = invis;
     
-    sb1 [label = "2nd Beat B/C";shape = rect;];
-    sb2 [label = "2nd Beat C/D";shape = rect;];
-    sb3 [label = "2nd Beat D/A";shape = rect;];
-    sb4 [label = "2nd Beat A/B";shape = rect;];
+    sb1 [label = "2nd Beat B/C";shape = rect;id = "sb1";];
+    sb2 [label = "2nd Beat C/D";shape = rect;id = "sb1";];
+    sb3 [label = "2nd Beat D/A";shape = rect;id = "sb1";];
+    sb4 [label = "2nd Beat A/B";shape = rect;id = "sb1";];
   }
   
   tt:s -> sb1:n [constraint = false;];
@@ -82,7 +80,7 @@ digraph {
     margin = 25;
     style = invis;
     
-    td [label = "The Disaster";shape = rect;];
+    td [label = "The Disaster";shape = rect;id = "td";];
   }
   
   sb4:s -> td:n;
