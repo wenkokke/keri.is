@@ -2,7 +2,11 @@
   <!-- Hero head: will stick at the top -->
   ${ if(navbar) }
   <div class="hero-head">
+    ${ if(background-image) }
     <figure class="image is-16by9">${ navbar() }</figure>
+    ${ else }
+    ${ navbar() }
+    ${ endif }
   </div>
   ${ endif }
 

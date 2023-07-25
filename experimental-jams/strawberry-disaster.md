@@ -6,7 +6,7 @@ background-image: "strawberry-disaster"
 
 ## Suggestion
 
-## Prologue
+## Opener
 
 ## First Beats
 

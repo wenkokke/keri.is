@@ -1,6 +1,5 @@
 # Configuration for Hero & Navigation Bar
 navbar: true
-background-image: "experimental-jams"
 experimental-jams:
   - title: "Strawberry Disaster"
     subtitle: "#1"
