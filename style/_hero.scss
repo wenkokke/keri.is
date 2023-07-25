@@ -2,13 +2,13 @@
 @use "sass:math";
 @use "sass:string";
 
-@mixin heroBackgroundImage($url, $sourceWidth, $dppx) {
+@mixin backgroundImage($url, $sourceWidth, $sourceDppx) {
   @include mobile {
     $targetWidth: 768;
-    $sourceDppx: math.div($sourceWidth, $targetWidth) * $dppx;
-    $targetWidth1x: math.div(1, $dppx) * $targetWidth;
-    $targetWidth2x: math.div(2, $dppx) * $targetWidth;
-    $targetWidth3x: math.div(3, $dppx) * $targetWidth;
+    $targetDppxAtSourceWidth: math.div($sourceWidth, $targetWidth) * $sourceDppx;
+    $targetWidth1x: math.div(1, $sourceDppx) * $targetWidth;
+    $targetWidth2x: math.div(2, $sourceDppx) * $targetWidth;
+    $targetWidth3x: math.div(3, $sourceDppx) * $targetWidth;
     $imageSetList: ();
     // 1x
     @if $targetWidth1x <= $sourceWidth {
@@ -34,21 +34,21 @@
         } @else {
           $imageSetList: append(
             $imageSetList,
-            url("#{$url}?as=webp") $sourceDppx + x,
+            url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
             comma
           );
         }
       } @else {
         $imageSetList: append(
           $imageSetList,
-          url("#{$url}?as=webp") $sourceDppx + x,
+          url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
           comma
         );
       }
     } @else {
       $imageSetList: append(
         $imageSetList,
-        url("#{$url}?as=webp") $sourceDppx + x,
+        url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
         comma
       );
     }
@@ -58,10 +58,10 @@
   }
   @include tablet {
     $targetWidth: 960;
-    $sourceDppx: math.div($sourceWidth, $targetWidth) * $dppx;
-    $targetWidth1x: math.div(1, $dppx) * $targetWidth;
-    $targetWidth2x: math.div(2, $dppx) * $targetWidth;
-    $targetWidth3x: math.div(3, $dppx) * $targetWidth;
+    $targetDppxAtSourceWidth: math.div($sourceWidth, $targetWidth) * $sourceDppx;
+    $targetWidth1x: math.div(1, $sourceDppx) * $targetWidth;
+    $targetWidth2x: math.div(2, $sourceDppx) * $targetWidth;
+    $targetWidth3x: math.div(3, $sourceDppx) * $targetWidth;
     $imageSetList: ();
     // 1x
     @if $targetWidth1x <= $sourceWidth {
@@ -87,21 +87,21 @@
         } @else {
           $imageSetList: append(
             $imageSetList,
-            url("#{$url}?as=webp") $sourceDppx + x,
+            url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
             comma
           );
         }
       } @else {
         $imageSetList: append(
           $imageSetList,
-          url("#{$url}?as=webp") $sourceDppx + x,
+          url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
           comma
         );
       }
     } @else {
       $imageSetList: append(
         $imageSetList,
-        url("#{$url}?as=webp") $sourceDppx + x,
+        url("#{$url}?as=webp") $targetDppxAtSourceWidth + x,
         comma
       );
     }
@@ -109,15 +109,12 @@
     background-image: -webkit-image-set($imageSetList) !important;
     background-image: image-set($imageSetList) !important;
   }
+  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 /* Hero & Navbar */
-.hero .navbar {
-  @extend .is-16by9;
-  @extend .has-ratio;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .hero .navbar .navbar-burger {
   @include desktop {
     position: absolute;
@@ -145,12 +142,10 @@
 
 /* experimental jams */
 .experimental-jams {
-  @include heroBackgroundImage("../images/experimental-jams.png", 1920, 0.75);
-  background-position: center;
+  @include backgroundImage("../images/experimental-jams.png", 1920, 0.75);
 }
 
 /* strawberry disaster */
 .strawberry-disaster {
-  @include heroBackgroundImage("../images/strawberry-disaster.png", 1920, 0.75);
-  background-position: center;
+  @include backgroundImage("../images/strawberry-disaster.png", 1920, 0.75);
 }

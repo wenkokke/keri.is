@@ -2,7 +2,8 @@
   "experimental-jams/index.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/experimental-jams/index.html",
+      "template": "${.}/templates/experimental-jams.html",
+      "metadata-file": "${.}/templates/experimental-jams.yaml",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
@@ -15,9 +16,9 @@
   "experimental-jams/*.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/experimental-jams/page.html",
+      "template": "${.}/templates/page.html",
+      "metadata-file": "${.}/templates/experimental-jams.yaml",
       "lua-filter": "${.}/pandoc-filters/bubble/bubble.lua",
-      "metadata-file": "${.}/templates/experimental-jams/page.yaml",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {

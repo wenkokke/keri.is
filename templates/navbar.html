@@ -1,5 +1,5 @@
 <nav
-  class="navbar has-ratio ${ it }"
+  class="navbar has-ratio ${ background-image }"
   role="navigation"
   aria-label="main navigation"
 >
@@ -19,22 +19,24 @@
 
   <div id="navbar" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="/"> keri.is </a>
-
+      ${ for(navbar-items) }
+      ${ if(it.dropdown-items) }
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="/experimental-jams/index.md">
-          Experimental Jams
+        <a class="navbar-link" href="${ it.url }">
+          ${ it.title }
         </a>
-
         <div class="navbar-dropdown">
-          <a
-            class="navbar-item"
-            href="/experimental-jams/strawberry-disaster.md"
-          >
-            Strawberry Disaster
+          ${ for(it.dropdown-items) }
+          <a class="navbar-item" href="${ it.url }">
+             ${ it.title }
           </a>
+          ${ endfor }
         </div>
       </div>
+      ${ else }
+      <a class="navbar-item" href="${ it.url }">${ it.title }</a>
+      ${ endif }
+      ${ endfor }
     </div>
   </div>
 </nav>

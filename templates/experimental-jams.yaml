@@ -1,0 +1,28 @@
+# Configuration for Hero & Navigation Bar
+navbar: true
+background-image: "experimental-jams"
+experimental-jams:
+  - title: "Strawberry Disaster"
+    subtitle: "#1"
+    href: "/experimental-jams/strawberry-disaster.md"
+    background-image: "strawberry-disaster"
+navbar-items:
+  - title: "keri.is"
+    url: "/"
+  - title: "Experimental Jams"
+    url: "/experimental-jams/"
+    dropdown:
+      - title: "Strawberry Disaster"
+        url: "/experimental-jams/strawberry-disaster.md"
+
+# Configuration for Bubble filter
+bubble:
+  blockquote: true
+  Sam:
+    style: "bottom-left"
+  Mac:
+    style: "left"
+  Cat:
+    style: "bottom-right"
+  Tay:
+    style: "right"

@@ -1,7 +1,7 @@
 ---
 title: "Strawberry Disaster"
 subtitle: "#1"
-hero: "strawberry-disaster"
+background-image: "strawberry-disaster"
 ---
 
 Let's talk about Strawberry Disaster!
