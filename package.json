@@ -9,8 +9,11 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@parcel/optimizer-esbuild": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
     "@parcel/watcher": "^2.2.0",
+    "@types/react": "^18.2.16",
+    "@types/react-dom": "^18.2.7",
     "bulma": "^0.9.4",
     "lightningcss": "^1.21.5",
     "parcel": "^2.9.3",
@@ -29,5 +32,12 @@
       "index.html": "index.html",
       "(.*).html": "$1/index.html"
     }
+  },
+  "dependencies": {
+    "@fontsource/handlee": "^5.0.5",
+    "@fontsource/inter": "^5.0.5",
+    "@fontsource/roboto": "^5.0.5",
+    "@fontsource/sedgwick-ave": "^5.0.5",
+    "@fontsource/tinos": "^5.0.5"
   }
 }

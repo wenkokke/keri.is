@@ -1,4 +1,6 @@
 digraph {
+  node [fontname = "Handlee";];
+  
   clusterrank = local;
   compound = true;
   layout = "dot";
@@ -6,7 +8,7 @@ digraph {
   rank = "same";
   rankdir = "LR";
   
-  subgraph the_suggestion {
+  subgraph {
     cluster = true;
     margin = 25;
     style = invis;
@@ -16,7 +18,7 @@ digraph {
   
   sg:s -> m1:n;
   
-  subgraph opener {
+  subgraph {
     cluster = true;
     margin = 25;
     style = invis;
@@ -31,7 +33,7 @@ digraph {
   m2:e -> m3:w;
   m3:e -> m4:w;
   
-  subgraph first_beats {
+  subgraph {
     cluster = true;
     margin = 25;
     style = invis;
@@ -48,7 +50,7 @@ digraph {
   fb2:e -> fb3:w;
   fb3:e -> fb4:w;
   
-  subgraph the_tilt {
+  subgraph {
     cluster = true;
     margin = 25;
     style = invis;
@@ -58,7 +60,7 @@ digraph {
   
   fb4:s -> tt:n;
   
-  subgraph second_beats {
+  subgraph {
     cluster = true;
     margin = 25;
     style = invis;
@@ -75,7 +77,7 @@ digraph {
   sb2:e -> sb3:w;
   sb3:e -> sb4:w;
   
-  subgraph the_disaster {
+  subgraph {
     cluster = true;
     margin = 25;
     style = invis;

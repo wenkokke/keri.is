@@ -9,11 +9,15 @@
       "parcel-transformer-graphviz"
     ],
     "*.svg": [
-      "...",
       "parcel-transformer-rough-svg"
     ]
   },
   "namers": [
     "parcel-namer-rewrite"
-  ]
+  ],
+  "optimizers": {
+    "*.js": [
+      "@parcel/optimizer-esbuild"
+    ]
+  }
 }

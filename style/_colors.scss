@@ -56,3 +56,6 @@ $text-invert-strong: findColorInvert($text-strong);
 $card-background-color: $primary;
 $card-color: $text-invert;
 $card-header-color: $text-invert-strong;
+
+// Fonts
+$family-sans-serif: append("Tinos", $family-sans-serif);

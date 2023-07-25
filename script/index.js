@@ -1,3 +1,8 @@
+import "@fontsource/handlee";
+import "@fontsource/tinos";
+import "@fontsource/sedgwick-ave";
+
+// Interactive elements
 document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
