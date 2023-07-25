@@ -5,7 +5,11 @@ flowchart: "./strawberry-disaster-flowchart.dot"
 background-image: "strawberry-disaster"
 ---
 
-<img src="./strawberry-disaster-flowchart.dot" />
+<figure class="image is-16by9">
+  <picture>
+    <img src="./strawberry-disaster-flowchart.dot?roughness=0.75" />
+  </picture>
+</figure>
 
 ## Suggestion
 

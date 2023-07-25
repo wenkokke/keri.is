@@ -1,21 +1,30 @@
 digraph {
+  clusterrank = local;
   compound = true;
   layout = "dot";
   margin = 0;
   rank = "same";
   rankdir = "LR";
   
-  node [shape = rect;];
-  
-  subgraph opener {
-    label = "Opening";
+  subgraph the_suggestion {
     cluster = true;
     margin = 25;
+    style = invis;
     
-    m4 [label = "Monologue 4";shape = rect;];
-    m3 [label = "Monologue 3";shape = rect;];
-    m2 [label = "Monologue 2";shape = rect;];
-    m1 [label = "Monologue 1";shape = rect;];
+    sg [label = "The Suggestion";shape = rect;];
+  }
+  
+  sg:s -> m1:n;
+  
+  subgraph opener {
+    cluster = true;
+    margin = 25;
+    style = invis;
+    
+    m1 [label = "Monologue A";shape = rect;];
+    m2 [label = "Monologue B";shape = rect;];
+    m3 [label = "Monologue C";shape = rect;];
+    m4 [label = "Monologue D";shape = rect;];
   }
   
   m1:e -> m2:w;
@@ -23,19 +32,56 @@ digraph {
   m3:e -> m4:w;
   
   subgraph first_beats {
-    label = "First Beats";
     cluster = true;
     margin = 25;
+    style = invis;
     
-    s1 [label = "Scene 1";shape = rect;];
-    s2 [label = "Scene 2";shape = rect;];
-    s3 [label = "Scene 3";shape = rect;];
-    s4 [label = "Scene 4";shape = rect;];
+    fb1 [label = "1st Beat A/B";shape = rect;];
+    fb2 [label = "1st Beat B/C";shape = rect;];
+    fb3 [label = "1st Beat C/D";shape = rect;];
+    fb4 [label = "1st Beat D/A";shape = rect;];
   }
   
-  m4:s -> s1:n [constraint = false; ltail = opener; lhead = first_beats;];
+  m4:s -> fb1:n [constraint = false;];
   
-  s1:e -> s2:w;
-  s2:e -> s3:w;
-  s3:e -> s4:w;
+  fb1:e -> fb2:w;
+  fb2:e -> fb3:w;
+  fb3:e -> fb4:w;
+  
+  subgraph the_tilt {
+    cluster = true;
+    margin = 25;
+    style = invis;
+    
+    tt [label = "The Tilt";shape = rect;];
+  }
+  
+  fb4:s -> tt:n;
+  
+  subgraph second_beats {
+    cluster = true;
+    margin = 25;
+    style = invis;
+    
+    sb1 [label = "2nd Beat B/C";shape = rect;];
+    sb2 [label = "2nd Beat C/D";shape = rect;];
+    sb3 [label = "2nd Beat D/A";shape = rect;];
+    sb4 [label = "2nd Beat A/B";shape = rect;];
+  }
+  
+  tt:s -> sb1:n [constraint = false;];
+  
+  sb1:e -> sb2:w;
+  sb2:e -> sb3:w;
+  sb3:e -> sb4:w;
+  
+  subgraph the_disaster {
+    cluster = true;
+    margin = 25;
+    style = invis;
+    
+    td [label = "The Disaster";shape = rect;];
+  }
+  
+  sb4:s -> td:n;
 }
