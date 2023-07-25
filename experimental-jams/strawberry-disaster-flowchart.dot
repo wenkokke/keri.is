@@ -5,6 +5,7 @@ digraph {
   margin = 0;
   rank = "same";
   rankdir = "LR";
+  stylesheet = "./strawberry-disaster-flowchart.xslt";
   
   subgraph {
     cluster = true;

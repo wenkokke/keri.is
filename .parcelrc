@@ -19,5 +19,9 @@
     "*.js": [
       "@parcel/optimizer-esbuild"
     ]
-  }
+  },
+  "reporters": [
+    "...",
+    "parcel-reporter-static-files-copy"
+  ]
 }
