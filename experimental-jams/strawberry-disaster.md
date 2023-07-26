@@ -30,7 +30,7 @@ The suggestion should either _be_ or _inspire_ a genre.
 >
 > Cat: My husband found out I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand, I did it for us! I don't know what I'd do if he left me...
 >
-> Mae: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—my wife thinks she's still too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
+> Mae: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
 >
 > Tay: C
 
@@ -69,10 +69,10 @@ The 2nd beats are two person scenes.
 
 :::la-ronde-scenes
 
-1. **Sam** plays a scene with **Cat**.
-2. **Cat** plays a scene with **Mae**.
-3. **Mae** plays a scene with **Tay**.
-4. **Tay** plays a scene with **Sam**.
+1. **Sam** plays a scene with **Cat**, with **Sam** as the _focus_.
+2. **Cat** plays a scene with **Mae**, with **Cat** as the _focus_.
+3. **Mae** plays a scene with **Tay**, with **Mae** as the _focus_.
+4. **Tay** plays a scene with **Sam**, with **Tay** as the _focus_.
 
 :::
 
