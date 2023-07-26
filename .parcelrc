@@ -9,6 +9,7 @@
       "parcel-transformer-graphviz"
     ],
     "*.svg": [
+      "./plugins/run-xslt3.mjs",
       "parcel-transformer-rough-svg"
     ]
   },

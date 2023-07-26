@@ -1,11 +1,12 @@
-digraph {
+digraph strawberry_disaster {
+  node [fontname = "Tinos";];
+  
   clusterrank = local;
   compound = true;
   layout = "dot";
   margin = 0;
   rank = "same";
   rankdir = "LR";
-  stylesheet = "./strawberry-disaster-flowchart.xslt";
   
   subgraph {
     cluster = true;
@@ -64,10 +65,10 @@ digraph {
     margin = 25;
     style = invis;
     
-    sb1 [label = "2nd Beat B/C";shape = rect;id = "sb1";];
-    sb2 [label = "2nd Beat C/D";shape = rect;id = "sb1";];
-    sb3 [label = "2nd Beat D/A";shape = rect;id = "sb1";];
-    sb4 [label = "2nd Beat A/B";shape = rect;id = "sb1";];
+    sb1 [label = "2nd Beat A/B";shape = rect;id = "sb1";];
+    sb2 [label = "2nd Beat B/C";shape = rect;id = "sb1";];
+    sb3 [label = "2nd Beat C/D";shape = rect;id = "sb1";];
+    sb4 [label = "2nd Beat D/A";shape = rect;id = "sb1";];
   }
   
   tt:s -> sb1:n [constraint = false;];
