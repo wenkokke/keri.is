@@ -8,29 +8,36 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
+    "@fontsource/coming-soon": "^5.0.5",
+    "@fontsource/crafty-girls": "^5.0.5",
+    "@fontsource/gloria-hallelujah": "^5.0.5",
+    "@fontsource/hachi-maru-pop": "^5.0.5",
+    "@fontsource/inter": "^5.0.5",
+    "@fontsource/lato": "^5.0.5",
+    "@fontsource/montserrat": "^5.0.5",
+    "@fontsource/noto-sans": "^5.0.5",
+    "@fontsource/open-sans": "^5.0.5",
+    "@fontsource/opendyslexic": "^5.0.5",
+    "@fontsource/permanent-marker": "^5.0.5",
+    "@fontsource/poppins": "^5.0.5",
+    "@fontsource/roboto": "^5.0.5",
+    "@fontsource/roboto-mono": "^5.0.5",
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@parcel/optimizer-esbuild": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
-    "@parcel/transformer-typescript-tsc": "^2.9.3",
     "@parcel/validator-eslint": "^2.9.3",
     "@parcel/watcher": "^2.2.0",
-    "@types/react": "^18.2.16",
-    "@types/react-dom": "^18.2.7",
     "bulma": "^0.9.4",
     "lightningcss": "^1.21.5",
-    "mermaid": "^10.3.0",
     "parcel": "^2.9.3",
     "parcel-namer-rewrite": "^2.0.0-rc.3",
-    "parcel-reporter-static-files-copy": "^1.5.0",
     "parcel-transformer-graphviz": "^0.1.2",
     "parcel-transformer-pandoc": "github:wenkokke/parcel-transformer-pandoc",
     "parcel-transformer-rough-svg": "^0.1.2",
     "roughjs": "^4.5.2",
     "sass": "^1.64.1",
-    "saxon-js": "^2.5.0",
     "sharp": "^0.31.3",
-    "tmp": "^0.2.1",
-    "xslt3": "^2.5.0"
+    "tmp": "^0.2.1"
   },
   "parcel-namer-rewrite": {
     "chain": "@parcel/namer-default",
@@ -41,10 +48,6 @@
     }
   },
   "dependencies": {
-    "@fontsource/handlee": "^5.0.5",
-    "@fontsource/inter": "^5.0.5",
-    "@fontsource/roboto": "^5.0.5",
-    "@fontsource/sedgwick-ave": "^5.0.5",
     "@fontsource/tinos": "^5.0.5"
   }
 }

@@ -1,15 +1,6 @@
-@counter-style la-ronde-scenes {
-  system: fixed;
-  symbols: X Y Z W;
-  // "A/B" "B/C" "C/D" "D/E";
-  suffix: ".";
-}
 .upper-alpha ol {
-  padding-left: 2rem;
+  padding-left: 4rem;
   list-style-type: upper-alpha;
-}
-.la-ronde-scenes ol {
-  padding-left: 3rem;
 }
 .la-ronde-scenes ol li:nth-child(1) {
   list-style-type: "A/B. ";
