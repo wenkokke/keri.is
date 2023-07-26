@@ -13,16 +13,13 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "../node_modules/bulma/bulma";
 
 /* Style the basic tags emitted by Pandoc */
-@import "pandoc";
-
-/* Background Images */
-@import "background-image";
+@import "basics";
 
 /* Hero */
 @import "hero";
 
-/* Speech Bubbles */
-@import "bubble";
+/* Experimental Jams */
+@import "experimental-jams/index";
 
 /* Profile Picture */
 @import "profile";

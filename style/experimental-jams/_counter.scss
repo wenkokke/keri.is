@@ -1,0 +1,25 @@
+@counter-style la-ronde-scenes {
+  system: fixed;
+  symbols: X Y Z W;
+  // "A/B" "B/C" "C/D" "D/E";
+  suffix: ".";
+}
+.upper-alpha ol {
+  padding-left: 2rem;
+  list-style-type: upper-alpha;
+}
+.la-ronde-scenes ol {
+  padding-left: 3rem;
+}
+.la-ronde-scenes ol li:nth-child(1) {
+  list-style-type: "A/B. ";
+}
+.la-ronde-scenes ol li:nth-child(2) {
+  list-style-type: "B/C. ";
+}
+.la-ronde-scenes ol li:nth-child(3) {
+  list-style-type: "C/D. ";
+}
+.la-ronde-scenes ol li:nth-child(4) {
+  list-style-type: "D/A. ";
+}
