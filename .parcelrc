@@ -9,7 +9,6 @@
       "parcel-transformer-graphviz"
     ],
     "*.svg": [
-      "./plugins/run-xslt3.mjs",
       "parcel-transformer-rough-svg"
     ]
   },
@@ -20,9 +19,5 @@
     "*.js": [
       "@parcel/optimizer-esbuild"
     ]
-  },
-  "reporters": [
-    "...",
-    "parcel-reporter-static-files-copy"
-  ]
+  }
 }

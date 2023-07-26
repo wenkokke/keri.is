@@ -11,15 +11,16 @@ export default new Transformer({
     const stylesheetFileName = path.format({ ...path.parse(asset.filePath), base: null, ext: ".xslt" });
     if (fs.existsSync(stylesheetFileName)) {
       asset.invalidateOnFileChange(stylesheetFileName);
+      // Transform the SVG source
+      const sourceText = await asset.getCode();
+      const sourceFile = tmp.fileSync({ prefix: path.basename(asset.filePath), suffix: ".source.svg" });
+      fs.writeFileSync(sourceFile.name, sourceText);
+      const targetText = execSync(`xslt3 -xsl:${stylesheetFileName} -s:${sourceFile.name}`)
+      asset.setCode(targetText);
+      return [asset];
     } else {
       asset.invalidateOnFileCreate(stylesheetFileName);
+      return [asset];
     }
-    // Transform the SVG source
-    const sourceText = await asset.getCode();
-    const sourceFile = tmp.fileSync({ prefix: path.basename(asset.filePath), suffix: ".source.svg" });
-    fs.writeFileSync(sourceFile.name, sourceText);
-    const targetText = execSync(`xslt3 -xsl:${stylesheetFileName} -s:${sourceFile.name}`)
-    asset.setCode(targetText);
-    return [asset];
   }
 });
