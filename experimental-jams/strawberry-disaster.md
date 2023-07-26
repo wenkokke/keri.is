@@ -26,38 +26,36 @@ The suggestion should either _be_ or _inspire_ a genre.
 
 :::
 
-> Sam: I've got to score drugs for Beth's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool and what's cooler than drugs?!
+> Sam: I've got to score drugs for Beth's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool, and what's cooler than drugs?!
 >
 > Cat: My husband found out I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand, I did it for us! I don't know what I'd do if he left me...
 >
 > Mae: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
 >
-> Tay: C
+> Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell her that?! There's no party, it's just her. I just _need_ some space to figure this out... ›I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
 
 ## 1st Beats
 
-The 1st beats are two person scenes. Each scene should focus on the _focused player's need_—_e.g._, the A/B scene with **Sam** and **Cat** should focus on **Sam**'s need to be seen as cool.
+The 1st beats are two person scenes. Each scene focuses on the first player's need—_e.g._, the A/B scene with **Sam** and **Cat** is focused on **Sam**'s need to be seen as cool.
 
 :::la-ronde-scenes
 
-1. **Sam** plays a scene with **Cat**, with **Sam** as the _focus_.
-2. **Cat** plays a scene with **Mae**, with **Cat** as the _focus_.
-3. **Mae** plays a scene with **Tay**, with **Mae** as the _focus_.
-4. **Tay** plays a scene with **Sam**, with **Tay** as the _focus_.
+1. **Sam** and **Cat** play a scene focused on **Sam**.
+2. **Cat** and **Mae** play a scene focused on **Cat**.
+3. **Mae** and **Tay** play a scene focused on **Mae**.
+4. **Tay** and **Sam** play a scene focused on **Tay**.
 
 :::
 
-At some point during the scene, the backline shouts out whether or not the scene will end well for the _focused_ player.
+At some point during the scene, the backline shouts out whether or not the scene will end well for the first player.
 
 ## The Tilt
 
 The tilt is an interlude and provides an opportunity for the players to generate ideas and form consensus on where the story is going. For the audience, it's meant to have a prophetic quality. It should hint, but not establish:
 
-- _mimes feeling for a pulse_
-
-  "Oh my god, he's dead!"
-
-- "Oh my god, Carl shot Jason!"
+> Sam: "I can't feel her pulse!"
+>
+> Sam: "Oh my god, Steve shot Beth!"
 
 None of the elements from this scene should be immediately taken as cannon. They didn't happen yet. Instead, they provide a template for the second group game, a direction to move towards.
 
@@ -69,10 +67,10 @@ The 2nd beats are two person scenes.
 
 :::la-ronde-scenes
 
-1. **Sam** plays a scene with **Cat**, with **Sam** as the _focus_.
-2. **Cat** plays a scene with **Mae**, with **Cat** as the _focus_.
-3. **Mae** plays a scene with **Tay**, with **Mae** as the _focus_.
-4. **Tay** plays a scene with **Sam**, with **Tay** as the _focus_.
+1. **Sam** and **Cat** play a scene focused on **Sam**.
+2. **Cat** and **Mae** play a scene focused on **Cat**.
+3. **Mae** and **Tay** play a scene focused on **Mae**.
+4. **Tay** and **Sam** play a scene focused on **Tay**.
 
 :::
 
