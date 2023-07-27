@@ -1,20 +1,21 @@
 h1 {
-  @extend .is-size-1;
+  @extend .is-size-3-tablet;
+  @extend .is-size-4-mobile;
 }
 h2 {
-  @extend .is-size-2;
+  @extend .is-size-4-mobile;
+  @extend .is-size-5-tablet;
 }
 h3 {
-  @extend .is-size-3;
+  @extend .is-size-5-mobile;
+  @extend .is-size-6-tablet;
 }
 h4 {
-  @extend .is-size-4;
+  @extend .is-size-6-mobile;
+  @extend .is-size-7-tablet;
 }
 h5 {
-  @extend .is-size-5;
-}
-h6 {
-  @extend .is-size-6;
+  @extend .is-size-7-mobile;
 }
 ol {
   padding-top: 1rem;
