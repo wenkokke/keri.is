@@ -1,5 +1,6 @@
 ---
 title: "Strawberry Disaster"
+subtitle: "#1"
 flowchart: "./strawberry-disaster-flowchart.dot"
 background-image: "strawberry-disaster"
 ---
