@@ -17,6 +17,15 @@ h4 {
 h5 {
   @extend .is-size-7-mobile;
 }
+.section {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 1.5rem;
+  }
+}
 ol {
   padding-top: 1rem;
   padding-left: 4rem;
