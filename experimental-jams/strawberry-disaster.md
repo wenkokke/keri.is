@@ -26,13 +26,13 @@ The suggestion should either _be_ or _inspire_ a genre.
 
 :::
 
-> Sam: I've got to score drugs for Tay's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool, and what's cooler than drugs?!
+> Sam: I've got to score drugs for Beth's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool, and what's cooler than drugs?!
 >
 > Cat: My husband found out I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand, I did it for us! I don't know what I'd do if he left me...
 >
-> Mae: My wife and I have been having some issues... I feel Tay blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
+> Mae: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
 >
-> Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell her that?! There's no party, it's just her. I just _need_ some space to figure this out... ›I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
+> Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell her that?! There's no party, it's just her. I just _need_ some space to figure this out... I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
 
 ## 1st Beats
 
@@ -77,8 +77,7 @@ These scenes are similar to the first scenes, in that they're focused on the fir
 
 ## The Disaster
 
-The Disaster is a Monoscene in which all accumulated tension explodes and 
-The finale is a big group game in which all the accumulated tension explodes, and something goes horribly wrong. The team should cash in on any cheque written during The Tilt.
+The Disaster is a Monoscene in which all accumulated tension explodes and The finale is a big group game in which all the accumulated tension explodes, and something goes horribly wrong. The team should cash in on any cheque written during The Tilt.
 
 [The Disaster]: #the-disaster
 [Eventé]: https://improv.fandom.com/wiki/Eventé
