@@ -1,9 +1,4 @@
-import "@fontsource/roboto";
-import "@fontsource/roboto-mono";
-import "@fontsource/crafty-girls";
-import "@fontsource/gloria-hallelujah";
 import "@fontsource/hachi-maru-pop";
-import "@fontsource/opendyslexic";
 
 // Interactive elements
 document.addEventListener('DOMContentLoaded', () => {
