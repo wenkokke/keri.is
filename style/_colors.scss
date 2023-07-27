@@ -2,18 +2,18 @@
 @import "bulma/sass/utilities/functions";
 
 /* Strawberry Disaster Palette */
-$indian-red: #c4656e;
-$falu-red: #782522;
-$hunyadi-yellow: #fbb13c;
-$fawn: #ffc07f;
-$cerulean: #4281a4;
-$verdigris: #48a9a6;
-$eerie-black: #1c2321;
+$indian-red: hsl(354, 45%, 58%);
+$falu-red: hsl(2, 56%, 30%);
+$hunyadi-yellow: hsl(37, 96%, 61%);
+$fawn: hsl(30, 100%, 75%);
+$cerulean: hsl(201, 43%, 45%);
+$verdigris: hsl(178, 40%, 47%);
+$eerie-black: hsl(163, 11%, 12%);
 
 // $jasper: #c24f3cff;
 // $persian-red: #ca3c2e;
 // $avocado: #717e32;
-$ultra-violet: #585191;
+$ultra-violet: hsl(247, 40%, 60%);
 // $tekhelet: #4f359b;
 // $pale-dogwood: #f4d6cc;
 // $desert-sand: #d7b8a1ff;
@@ -30,7 +30,7 @@ $primary: $indian-red;
 $link: $ultra-violet;
 $info: $cerulean;
 $success: $verdigris;
-$warning: $fawn;
+$warning: $ultra-violet;
 $danger: $falu-red;
 
 $dark: $eerie-black;

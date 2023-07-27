@@ -26,11 +26,11 @@ The suggestion should either _be_ or _inspire_ a genre.
 
 :::
 
-> Sam: I've got to score drugs for Beth's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool, and what's cooler than drugs?!
+> Sam: I've got to score drugs for Tay's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool, and what's cooler than drugs?!
 >
 > Cat: My husband found out I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand, I did it for us! I don't know what I'd do if he left me...
 >
-> Mae: My wife and I have been having some issues... I feel Beth blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
+> Mae: My wife and I have been having some issues... I feel Tay blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
 >
 > Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell her that?! There's no party, it's just her. I just _need_ some space to figure this out... ›I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
 
@@ -47,19 +47,18 @@ The 1st beats are two person scenes. Each scene focuses on the first player's ne
 
 :::
 
-At some point during the scene, the backline shouts out whether or not the scene will end well for the first player.
+At some point during the scene, the backline shouts out whether or not the scene will end well for the first player. If the scene ends well for the first player, that _does not mean_ their need is resolved.
 
 ## The Tilt
 
-The tilt is an interlude and provides an opportunity for the players to generate ideas and form consensus on where the story is going. For the audience, it's meant to have a prophetic quality. It should hint, but not establish:
+The Tilt is a group game with a prophetic quality, foreshadowing the events of [The Disaster].
 
-> Sam: "I can't feel her pulse!"
->
-> Sam: "Oh my god, Steve shot Beth!"
+For the players, The Tilt provides an opportunity to generate new ideas and form consensus on where the story is going. There's no set structure for The Tilt, but there's lots of forms that work well:
 
-None of the elements from this scene should be immediately taken as cannon. They didn't happen yet. Instead, they provide a template for the second group game, a direction to move towards.
-
-I think there's a number of forms that'll work very well here. Sound and Movement. Scene Painting. A group scene with entirely different characters, dealing with some consequence of the Disaster.
+- Sound and Movement
+- Scene Painting
+- A group scene with new characters, set after the events of [The Disaster], in the style of an [Eventé].
+- _etc._
 
 ## 2nd Beats
 
@@ -78,4 +77,8 @@ These scenes are similar to the first scenes, in that they're focused on the fir
 
 ## The Disaster
 
+The Disaster is a Monoscene in which all accumulated tension explodes and 
 The finale is a big group game in which all the accumulated tension explodes, and something goes horribly wrong. The team should cash in on any cheque written during The Tilt.
+
+[The Disaster]: #the-disaster
+[Eventé]: https://improv.fandom.com/wiki/Eventé
