@@ -2,7 +2,6 @@
 navbar: true
 experimental-jams:
   - title: "Strawberry Disaster"
-    subtitle: "#1"
     href: "/experimental-jams/strawberry-disaster.md"
     background-image: "strawberry-disaster"
 navbar-items:
