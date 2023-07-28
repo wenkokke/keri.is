@@ -16,22 +16,22 @@ digraph strawberry_disaster {
     sg [label = "The Suggestion";shape = rect;id = "sg";];
   }
   
-  sg:s -> m1:n;
+  sg:s -> c1:n;
   
   subgraph {
     cluster = true;
     margin = 25;
     style = invis;
     
-    m1 [label = "Monologue A";shape = rect;id = "m1";];
-    m2 [label = "Monologue B";shape = rect;id = "m2";];
-    m3 [label = "Monologue C";shape = rect;id = "m3";];
-    m4 [label = "Monologue D";shape = rect;id = "m4";];
+    c1 [label = "Confession A";shape = rect;id = "c1";];
+    c2 [label = "Confession B";shape = rect;id = "c2";];
+    c3 [label = "Confession C";shape = rect;id = "c3";];
+    c4 [label = "Confession D";shape = rect;id = "c4";];
   }
   
-  m1:e -> m2:w;
-  m2:e -> m3:w;
-  m3:e -> m4:w;
+  c1:e -> c2:w;
+  c2:e -> c3:w;
+  c3:e -> c4:w;
   
   subgraph {
     cluster = true;
@@ -44,7 +44,7 @@ digraph strawberry_disaster {
     fb4 [label = "1st Beat D/A";shape = rect;id = "fb4";];
   }
   
-  m4:s -> fb1:n [constraint = false;];
+  c4:s -> fb1:n [constraint = false;];
   
   fb1:e -> fb2:w;
   fb2:e -> fb3:w;
