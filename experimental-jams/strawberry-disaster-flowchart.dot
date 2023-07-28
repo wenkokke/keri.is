@@ -55,7 +55,7 @@ digraph strawberry_disaster {
     margin = 25;
     style = invis;
     
-    tt [label = "The Tilt";shape = rect;id = "tt";];
+    tt [label = "The Omen";shape = rect;id = "tt";];
   }
   
   fb4:s -> tt:n;

@@ -4,6 +4,8 @@ flowchart: "./strawberry-disaster-flowchart.dot"
 background-image: "strawberry-disaster"
 ---
 
+Strawberry Disaster is a longform improvised form adapted from the tabletop game [Fiasco].
+
 <figure class="image is-16by9">
   <picture>
     <img id="strawberry-disaster-flowchart " src="./strawberry-disaster-flowchart.dot?roughness=0.75" />
@@ -48,15 +50,15 @@ The 1st beats are two person scenes. Each scene focuses on the first player's ne
 
 At some point during the scene, the backline shouts out whether or not the scene will end well for the first player. If the scene ends well for the first player, that _does not mean_ their need is resolved.
 
-## The Tilt
+## The Omen
 
-The Tilt is a group game with a prophetic quality, foreshadowing the events of [The Disaster].
+The Omen is a group game with a prophetic quality, foreshadowing the events of [The Disaster] in the style of an [Eventé].
 
-For the players, The Tilt provides an opportunity to generate new ideas and form consensus on where the story is going. There's no set structure for The Tilt, but there's lots of forms that work well:
+For the players, The Omen provides an opportunity to generate new ideas and form consensus on where the story is going. There's no set structure for The Omen, but there's lots of forms that work well:
 
+- A group scene with new characters, set after the events of [The Disaster].
 - Sound and Movement
 - Scene Painting
-- A group scene with new characters, set after the events of [The Disaster], in the style of an [Eventé].
 - _etc._
 
 ## 2nd Beats
@@ -76,7 +78,9 @@ These scenes are similar to the first scenes, in that they're focused on the fir
 
 ## The Disaster
 
-The Disaster is a Monoscene in which all accumulated tension explodes and The finale is a big group game in which all the accumulated tension explodes, and something goes horribly wrong. The team should cash in on any cheque written during The Tilt.
+The Disaster is a Monoscene in which all accumulated tension explodes and The finale is a big group game in which all the accumulated tension explodes, and something goes horribly wrong. The team should cash in on any cheque written during The Omen.
 
+[Fiasco]: https://bullypulpitgames.com/products/fiasco
+[The Omen]: #the-omen
 [The Disaster]: #the-disaster
-[Eventé]: https://improv.fandom.com/wiki/Eventé
+[Eventé]: https://wiki.improvresourcecenter.com/index.php?title=Eventé
