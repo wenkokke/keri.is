@@ -6,10 +6,12 @@
       "..."
     ],
     "*.{dot,gv}": [
-      "parcel-transformer-graphviz"
+      "parcel-transformer-graphviz",
+      "..."
     ],
     "experimental-jams/*-flowchart.svg": [
-      "parcel-transformer-rough-svg"
+      "parcel-transformer-rough-svg",
+      "..."
     ]
   },
   "namers": [
