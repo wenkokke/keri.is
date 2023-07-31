@@ -1,0 +1,12 @@
+i.fa-threads {
+  display: var(--fa-display, inline-block);
+  background-color: #fff;
+  -webkit-mask: url("../images/threads.svg") center no-repeat;
+  mask: url("../images/threads.svg") center no-repeat;
+  width: 1em;
+  height: 1em;
+  margin-right: -0.15rem;
+}
+i.fa-cloud {
+  margin-right: -0.15rem;
+}

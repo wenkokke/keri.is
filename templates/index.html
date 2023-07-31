@@ -32,7 +32,11 @@
       ${ for(links) }
       <a class="box notification is-info" title="${ it.handle }" href="${ it.url }">
         ${ if(it.brand) }
+        ${ if(it.icon) }
+        <i class="${ it.icon/lowercase }" aria-label="${ it.brand/lowercase }"></i>
+        ${ else }
         <i class="fa-brands fa-${ it.brand/lowercase }" aria-label="${ it.brand/lowercase }"></i>
+        ${ endif }
         ${ endif }
         <strong>${ it.brand }</strong>
       </a>

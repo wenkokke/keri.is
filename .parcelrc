@@ -8,7 +8,7 @@
     "*.{dot,gv}": [
       "parcel-transformer-graphviz"
     ],
-    "*.svg": [
+    "experimental-jams/*-flowchart.svg": [
       "parcel-transformer-rough-svg"
     ]
   },
