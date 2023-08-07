@@ -38,6 +38,6 @@
     }
   },
   "dependencies": {
-    "@fontsource/tinos": "^5.0.5"
+    "@fontsource/tinos": "^5.0.8"
   }
 }
