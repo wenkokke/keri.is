@@ -9,7 +9,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "@fontsource/hachi-maru-pop": "^5.0.5",
-    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "@parcel/optimizer-esbuild": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
     "@parcel/validator-eslint": "^2.9.3",
