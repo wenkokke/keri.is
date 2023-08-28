@@ -16,7 +16,7 @@
     "@parcel/watcher": "^2.2.0",
     "bulma": "^0.9.4",
     "htmlnano": "^2.0.4",
-    "lightningcss": "^1.21.5",
+    "lightningcss": "^1.21.7",
     "parcel": "^2.9.3",
     "parcel-namer-rewrite": "^2.0.0-rc.3",
     "parcel-transformer-graphviz": "^0.1.2",
