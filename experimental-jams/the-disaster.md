@@ -1,14 +1,14 @@
 ---
-title: "Strawberry Disaster"
-flowchart: "./strawberry-disaster-flowchart.dot"
-background-image: "strawberry-disaster"
+title: "The Disaster"
+flowchart: "./the-disaster-flowchart.dot"
+background-image: "the-disaster"
 ---
 
-Strawberry Disaster is an improv form inspired by the tabletop game [Fiasco]. It uses the structure of the [Harold] and [La Ronde], rigged to explode in a disastrous finale.
+The Disaster is an improv form inspired by the tabletop game [Fiasco]. It uses the structure of the [Harold] and [La Ronde], rigged to explode in a disastrous finale.
 
 <figure class="image is-16by9">
   <picture>
-    <img id="strawberry-disaster-flowchart " src="./strawberry-disaster-flowchart.dot?roughness=0.75" />
+    <img id="the-disaster-flowchart " src="./the-disaster-flowchart.dot?roughness=0.75" />
   </picture>
 </figure>
 

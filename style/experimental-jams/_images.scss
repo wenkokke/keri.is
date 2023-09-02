@@ -114,7 +114,7 @@
   background-repeat: no-repeat !important;
 }
 
-/* strawberry disaster */
-.strawberry-disaster {
-  @include backgroundImage("../images/strawberry-disaster.png", 1920, 0.75);
+/* the disaster */
+.the-disaster {
+  @include backgroundImage("../images/the-disaster.png", 1920, 0.75);
 }

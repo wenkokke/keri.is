@@ -1,4 +1,4 @@
-digraph strawberry_disaster {
+digraph the_disaster {
   node [fontname = "Tinos";];
   
   clusterrank = local;
