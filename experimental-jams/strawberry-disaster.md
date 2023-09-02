@@ -4,7 +4,7 @@ flowchart: "./strawberry-disaster-flowchart.dot"
 background-image: "strawberry-disaster"
 ---
 
-Strawberry Disaster is an improv form adapted from the tabletop game [Fiasco]. It uses the structure of the [Harold] and [La Ronde], rigged to explode in a disastrous finale.
+Strawberry Disaster is an improv form inspired by the tabletop game [Fiasco]. It uses the structure of the [Harold] and [La Ronde], rigged to explode in a disastrous finale.
 
 <figure class="image is-16by9">
   <picture>
@@ -15,6 +15,8 @@ Strawberry Disaster is an improv form adapted from the tabletop game [Fiasco]. I
 ## Suggestion
 
 The suggestion should either _be_ or _inspire_ a genre.
+
+Let's keep things simple for our example, and say our suggestion is "small town drama".
 
 ## Confessions
 
