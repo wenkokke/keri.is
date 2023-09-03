@@ -36,7 +36,7 @@ That means the 1st and 2nd Beats will be:
 - Scene C/D. **Mae** and **Tay**
 - Scene D/A. **Tay** and **Sam**
 
-Unless you're first to step out, you should choose a character that can fulfil the previous player's need. If the previous player said they _need_ a fancy cake, you had better be able to bake. If you're last, you should choose a _need_ that the first player's character can fulfil.
+Unless you're first to step out, you should choose a character that _could_ fulfil the previous player's need, even if they don't necessarily want to. If the previous player said they _need_ a fancy cake, you might be a baker or a fence with a load of hot cakes, but whatever you choose, you should be able to provide fancy cake. If you're the last to step out, you should choose a _need_ that the first player's character can fulfil.
 
 Confession A. **Sam** steps out and delivers a confession that establishes who they are and what they need:
 
@@ -53,6 +53,13 @@ Confession C. **Mae** edits **Cat**'s confession by stepping out starting their 
 Confession D. **Tay** edits **Mae**'s confession by stepping out starting her own. She establishes who she is, what she needs, how she could fulfil **Sam**'s need:
 
 > Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell her that?! There's no party, it's just her. I just _need_ some space to figure this out... I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
+
+The Confessions set up a closed loop of needs:
+
+- **Sam** needs something from **Cat**,
+- **Cat** needs something from **Mae**,
+- **Mae** needs something from **Tay**,
+- **Tay** needs something from **Sam**.
 
 ## 1st Beats
 
