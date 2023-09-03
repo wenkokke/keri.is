@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "keri.is",
-  "version": "23.09",
+  "version": "23.9",
   "scripts": {
     "dev": "parcel index.md improv.md ",
     "build": "parcel build index.md improv.md",
