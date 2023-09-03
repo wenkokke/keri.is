@@ -1,7 +1,7 @@
 [bumpver]
 current_version = "v23.9.1"
 version_pattern = "vYY.MM[.INC0]"
-commit_message = "bump version {old_version} -> {new_version}"
+commit_message = "[deploy] bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"
 tag_scope = "default"
 pre_commit_hook = ""
