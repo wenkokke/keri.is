@@ -9,7 +9,7 @@
       "parcel-transformer-graphviz",
       "..."
     ],
-    "experimental-jams/*-flowchart.svg": [
+    "improv/*.svg": [
       "parcel-transformer-rough-svg",
       "..."
     ]

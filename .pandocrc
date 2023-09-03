@@ -1,9 +1,9 @@
 {
-  "experimental-jams.md": [
+  "improv.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/experimental-jams.html",
-      "metadata-file": "${.}/templates/experimental-jams.yaml",
+      "template": "${.}/templates/improv.html",
+      "metadata-file": "${.}/templates/improv.yaml",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
@@ -13,11 +13,11 @@
       "metadata-file": "${.}/templates/default.yaml"
     }
   ],
-  "experimental-jams/*.md": [
+  "improv/*.md": [
     {
       "standalone": true,
       "template": "${.}/templates/page.html",
-      "metadata-file": "${.}/templates/experimental-jams.yaml",
+      "metadata-file": "${.}/templates/improv.yaml",
       "lua-filter": "${.}/pandoc-filters/bubble/bubble.lua",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },

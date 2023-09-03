@@ -1,17 +1,17 @@
 # Configuration for Hero & Navigation Bar
 navbar: true
-experimental-jams:
+improv:
   - title: "The Disaster"
-    href: "/experimental-jams/the-disaster.md"
+    href: "/improv/the-disaster.md"
     background-image: "the-disaster"
 navbar-items:
   - title: "keri.is"
     url: "/index.md"
-  - title: "Experimental Jams"
-    url: "/experimental-jams.md"
+  - title: "Improv"
+    url: "/improv.md"
     dropdown-items:
       - title: "The Disaster"
-        url: "/experimental-jams/the-disaster.md"
+        url: "/improv/the-disaster.md"
 
 # Configuration for Bubble filter
 bubble:
