@@ -41,17 +41,17 @@ Let's look at a little example:
 
   > Sam: I've got to score drugs for Tay's party. Her parents are away, so she's throwing a party, and somehow I got invited! I _need_ her to think I'm cool, and what's cooler than drugs?!
 
-- Confession B. **Cat** edits **Sam**'s confession by stepping out starting her own. She establishes who she is, what she needs, how she could fulfil **Sam**'s need:
+- Confession B. **Cat** edits **Sam**'s confession by stepping out and starting her own. She establishes who she is, what she needs, and how she could fulfil **Sam**'s need:
 
-  > Cat: My husband found out I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand, I did it for us! I don't know what I'd do if he left me...
+  > Cat: I told my husband I've been selling drugs. He didn't take it well... I've been sleeping on a cot in the shed for a week. I'm afraid he'll never forgive me. I _need_ him to understand. I've booked a trip for us for this weekend, so we can get away somewhere nice and talk...
 
-- Confession C. **Mac** edits **Cat**'s confession by stepping out starting their own. They establishes who they are, what they need, how they could fulfil **Cat**'s need:
+- Confession C. **Mac** edits **Cat**'s confession by stepping out and starting his own. He establishes who he is, what he _needs_, and how he could fulfil **Cat**'s need:
 
   > Mac: My wife and I have been having some issues... I feel Tay blames me... We didn't tell her what was really going on—she's just too young to hear about drugs—but my relationship with my daughter is important to me... I _need_ her to see my side of things...
 
-- Confession D. **Tay** edits **Mac**'s confession by stepping out starting her own. She establishes who she is, what she needs, how she could fulfil **Sam**'s need:
+- Confession D. **Tay** edits **Mac**'s confession by stepping out and starting her own. She establishes who she is, what she needs, how she could fulfil **Sam**'s need:
 
-  > Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell her that?! There's no party, it's just her. I just _need_ some space to figure this out... I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
+  > Tay: I think... I'm gay? I think... I've got a crush on Sam? I told Sam I'm throwing a party this weekend. Why did I tell them that?! There's no party, it's just them. I just _need_ some space to figure this out... I just wish dad would get off my ass. He keeps trying to get me to hang out... I told mom to take him on a trip... Maybe that way he'll finally forgive her for forgetting their anniversary... Ugh, he's being such an asshole about it.
 
 The character's _needs_ should form a closed loop. To see what that means, let's have a look at one way our example Confessions might play out:
 
