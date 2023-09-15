@@ -6,6 +6,19 @@ i.fa-threads {
   width: 1em;
   height: 1em;
   margin-right: -0.15rem;
+  position: relative;
+  top: 0.15em;
+}
+i.fa-eventbrite {
+  display: var(--fa-display, inline-block);
+  background-color: #fff;
+  -webkit-mask: url("../images/eventbrite.svg") center no-repeat;
+  mask: url("../images/eventbrite.svg") center no-repeat;
+  width: 1em;
+  height: 1em;
+  margin-right: -0.15rem;
+  position: relative;
+  top: 0.15em;
 }
 i.fa-cloud {
   margin-right: -0.15rem;
