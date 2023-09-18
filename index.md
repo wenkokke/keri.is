@@ -2,9 +2,6 @@
 title: "Keri Kokke"
 profile: "images/profile.png"
 links:
-  - brand: "The Disaster: 9AM PT, September 17"
-    icon: "fa-eventbrite"
-    url: "http://the-disaster.eventbrite.co.uk"
   - brand: "Mastodon"
     handle: "\\@keri\\@where.keri.is"
     url: "https://where.keri.is/\\@keri"
