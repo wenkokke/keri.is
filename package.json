@@ -24,7 +24,7 @@
     "parcel-transformer-pandoc": "^0.2.4",
     "parcel-transformer-rough-svg": "^0.1.2",
     "roughjs": "^4.5.2",
-    "sass": "^1.67.0",
+    "sass": "^1.68.0",
     "sharp": "^0.31.3",
     "svgo": "^3.0.2",
     "swc": "^1.0.11",
