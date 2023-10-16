@@ -13,7 +13,7 @@
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@parcel/optimizer-esbuild": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
-    "@parcel/validator-eslint": "^2.9.3",
+    "@parcel/validator-eslint": "^2.10.0",
     "@parcel/watcher": "^2.3.0",
     "bulma": "^0.9.4",
     "htmlnano": "^2.0.4",
