@@ -3,32 +3,30 @@
   "name": "keri.is",
   "version": "23.9.3",
   "scripts": {
-    "dev": "parcel index.md improvising.md ",
+    "dev": "parcel src/index.html",
     "build": "parcel build index.md improvising.md",
     "bump": "pipx run bumpver update"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^1.3.0"
+  },
   "devDependencies": {
     "@fontsource/hachi-maru-pop": "^5.0.14",
     "@fortawesome/fontawesome-free": "^6.4.0",
-    "@parcel/optimizer-esbuild": "^2.10.1",
-    "@parcel/transformer-sass": "^2.10.1",
-    "@parcel/validator-eslint": "^2.10.1",
-    "@parcel/watcher": "^2.3.0",
+    "@parcel/core": "^2.10.2",
+    "@parcel/optimizer-esbuild": "^2.10.2",
+    "@parcel/transformer-sass": "^2.10.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-helmet-async": "^1.0.3",
     "bulma": "^0.9.4",
-    "htmlnano": "^2.0.4",
-    "lightningcss": "^1.22.0",
     "parcel": "^2.10.2",
     "parcel-namer-rewrite": "^2.0.0-rc.3",
-    "parcel-transformer-graphviz": "^0.1.2",
-    "parcel-transformer-pandoc": "^0.2.4",
-    "parcel-transformer-rough-svg": "^0.1.2",
-    "roughjs": "^4.6.4",
-    "sass": "^1.69.5",
-    "sharp": "^0.31.3",
-    "svgo": "^3.0.2",
-    "swc": "^1.0.11",
-    "tmp": "^0.2.1"
+    "process": "^0.11.10",
+    "sharp": "^0.31.3"
   },
   "parcel-namer-rewrite": {
     "chain": "@parcel/namer-default",
@@ -37,8 +35,5 @@
       "index.html": "index.html",
       "(.*).html": "$1/index.html"
     }
-  },
-  "dependencies": {
-    "@fontsource/tinos": "^5.0.5"
   }
 }
