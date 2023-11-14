@@ -16,7 +16,7 @@
     "@parcel/validator-eslint": "^2.10.1",
     "@parcel/watcher": "^2.3.0",
     "bulma": "^0.9.4",
-    "htmlnano": "^2.0.4",
+    "htmlnano": "^2.1.0",
     "lightningcss": "^1.22.0",
     "parcel": "^2.10.2",
     "parcel-namer-rewrite": "^2.0.0-rc.3",
