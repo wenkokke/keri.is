@@ -9,7 +9,7 @@
       "parcel-transformer-graphviz",
       "..."
     ],
-    "improv/*.svg": [
+    "improvising/*.svg": [
       "parcel-transformer-rough-svg",
       "..."
     ]

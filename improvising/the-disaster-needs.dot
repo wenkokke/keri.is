@@ -3,6 +3,7 @@ digraph the_disaster {
   
   layout = "circo";
   splines = "curved";
+  edge [dir = "back";];
   
   b2c [label = "needs\nsomething\nfrom";shape = "plaintext";];
   c [label = "Mac";id = "c";];
@@ -13,12 +14,12 @@ digraph the_disaster {
   a2b [label = "needs\nsomething\nfrom";shape = "plaintext";];
   b [label = "Cat";id = "b";];
   
-  a -> a2b [arrowhead = "none";];
-  a2b -> b;
-  b -> b2c [arrowhead = "none";];
-  b2c -> c;
-  c -> c2d [arrowhead = "none";];
-  c2d -> d;
-  d -> d2a [arrowhead = "none";];
-  d2a -> a;
+  a -> a2b;
+  a2b -> b [arrowtail = "none";];
+  b -> b2c;
+  b2c -> c [arrowtail = "none";];
+  c -> c2d;
+  c2d -> d [arrowtail = "none";];
+  d -> d2a;
+  d2a -> a [arrowtail = "none";];
 }

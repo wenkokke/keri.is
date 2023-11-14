@@ -1,9 +1,9 @@
 {
-  "improv.md": [
+  "improvising.md": [
     {
       "standalone": true,
-      "template": "${.}/templates/improv.html",
-      "metadata-file": "${.}/templates/improv.yaml",
+      "template": "${.}/templates/improvising.html",
+      "metadata-file": "${.}/templates/improvising.yaml",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },
     {
@@ -13,11 +13,11 @@
       "metadata-file": "${.}/templates/default.yaml"
     }
   ],
-  "improv/*.md": [
+  "improvising/*.md": [
     {
       "standalone": true,
       "template": "${.}/templates/page.html",
-      "metadata-file": "${.}/templates/improv.yaml",
+      "metadata-file": "${.}/templates/improvising.yaml",
       "lua-filter": "${.}/pandoc-filters/bubble/bubble.lua",
       "write": "${.}/pandoc-filters/html_metadata_block/html_metadata_block.lua"
     },

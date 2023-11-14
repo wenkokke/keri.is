@@ -1,17 +1,17 @@
 # Configuration for Hero & Navigation Bar
 navbar: true
-improv:
+card:
   - title: "The Disaster"
-    href: "/improv/the-disaster.md"
+    href: "/improvising/the-disaster.md"
     background-image: "the-disaster"
 navbar-items:
   - title: "keri.is"
     url: "/index.md"
   - title: "Improv"
-    url: "/improv.md"
+    url: "/improvising.md"
     dropdown-items:
       - title: "The Disaster"
-        url: "/improv/the-disaster.md"
+        url: "/improvising/the-disaster.md"
 
 # Configuration for Bubble filter
 bubble:

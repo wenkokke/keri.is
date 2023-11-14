@@ -3,8 +3,8 @@
   "name": "keri.is",
   "version": "23.9.3",
   "scripts": {
-    "dev": "parcel index.md improv.md ",
-    "build": "parcel build index.md improv.md",
+    "dev": "parcel index.md improvising.md ",
+    "build": "parcel build index.md improvising.md",
     "bump": "pipx run bumpver update"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
