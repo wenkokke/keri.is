@@ -1,0 +1,32 @@
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+
+$primary: hsl(354, 45%, 58%);
+$link: hsl(247, 40%, 60%);
+$info: hsl(201, 43%, 45%);
+$success: hsl(178, 40%, 47%);
+$warning: hsl(247, 40%, 60%);
+$danger: hsl(2, 56%, 30%);
+
+$dark: hsl(163, 11%, 12%);
+$light: findColorInvert($dark);
+
+$scheme-main: $light;
+$scheme-main-ter: findLightColor($scheme-main);
+$scheme-main-bis: findDarkColor($scheme-main);
+$schema-invert: findColorInvert($scheme-main);
+$scheme-invert-ter: findLightColor($schema-invert);
+$scheme-invert-bis: findDarkColor($schema-invert);
+
+$background: $light;
+
+$text: $dark;
+$text-light: findLightColor($text);
+$text-strong: findDarkColor($text);
+$text-invert: findColorInvert($text);
+$text-invert-light: findColorInvert($text-light);
+$text-invert-strong: findColorInvert($text-strong);
+
+$card-background-color: $primary;
+$card-color: $text-invert;
+$card-header-color: $text-invert-strong;

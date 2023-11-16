@@ -5,11 +5,7 @@ background-image: "the-disaster"
 
 The Disaster is an improv form inspired by the tabletop game [Fiasco]. It uses the structure of the [Harold] and [La Ronde], rigged to explode in a disastrous finale.
 
-<figure class="image is-16by9">
-  <picture>
-    <img id="the-disaster-scenes " src="./the-disaster.dot?roughness=0.75" />
-  </picture>
-</figure>
+![The Scene Structure for The Disaster](./the-disaster.dot?roughness=0.75)
 
 ## Suggestion
 
