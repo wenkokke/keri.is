@@ -23,7 +23,7 @@
     "parcel-transformer-graphviz": "^0.1.2",
     "parcel-transformer-pandoc": "^0.2.4",
     "parcel-transformer-rough-svg": "^0.1.2",
-    "roughjs": "^4.6.4",
+    "roughjs": "^4.6.6",
     "sass": "^1.69.5",
     "sharp": "^0.31.3",
     "svgo": "^3.0.2",
