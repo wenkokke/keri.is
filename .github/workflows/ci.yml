@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ env.NODEJS_VERSION }}
 
       - name: Setup Pandoc ${{ env.PANDOC_VERSION }}
-        uses: pandoc/actions/setup@v1.0.0
+        uses: pandoc/actions/setup@v1.1.1
         with:
           version: ${{ env.PANDOC_VERSION }}
 
@@ -70,7 +70,7 @@ jobs:
           node-version: ${{ env.NODEJS_VERSION }}
 
       - name: Setup Pandoc ${{ env.PANDOC_VERSION }}
-        uses: pandoc/actions/setup@v1.0.0
+        uses: pandoc/actions/setup@v1.1.1
         with:
           version: ${{ env.PANDOC_VERSION }}
 
