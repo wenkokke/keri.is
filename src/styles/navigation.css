@@ -1,0 +1,14 @@
+.navigation ul li::before {
+  content: "– ";
+}
+
+.navigation ul li {
+  display: block;
+}
+
+.navigation ul li {
+  font-family: var(--font-header);
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1;
+}

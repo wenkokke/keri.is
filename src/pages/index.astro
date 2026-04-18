@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/navigation.css";
+---
+
+<BaseLayout>
+  <nav class="navigation">
+    <ul>
+      <li>
+        <a href="a/potter/" data-navigation> a Potter</a>
+      </li>
+    </ul>
+  </nav>
+</BaseLayout>
+
+<script>
+  const navigation = document.querySelectorAll("[data-navigation]");
+  navigation.forEach((anchor) => {
+    if (anchor instanceof HTMLAnchorElement) {
+      // Record the list item position.
+      const li = anchor.parentElement!;
+      const liBounds = li.getBoundingClientRect();
+      const liFontSize = window.getComputedStyle(li).fontSize;
+      console.log(liBounds);
+
+      // Remove hyperlink, but keep pointer style.
+      const href = anchor.href;
+      anchor.style.cursor = "pointer";
+      anchor.removeAttribute("href");
+
+      // Add onclick handler.
+      anchor.addEventListener(
+        "click",
+        () => {
+          // Create prefetch element.
+          const prefetch = document.createElement("link");
+          prefetch.rel = "prefetch";
+          prefetch.href = href;
+          document.head.appendChild(prefetch);
+
+          // Get bounding box for title.
+          const title = document.getElementById("title")!;
+
+          // Create the subtitle element.
+          const subtitle = document.createElement("span");
+          subtitle.id = "subtitle";
+          subtitle.appendChild(anchor);
+          title.appendChild(subtitle);
+
+          // Record the subtitle font size.
+          const subtitleFontSize = window.getComputedStyle(subtitle).fontSize;
+
+          // Restore the subtitle font size.
+          subtitle.style.fontSize = liFontSize;
+
+          // Record the subtitle element properties.
+          const subtitleBounds = subtitle.getBoundingClientRect();
+
+          // Remove the list item element.
+          li.parentNode?.removeChild(li);
+
+          // Replace the list item element with the subtitle element.
+          const deltaHeight = liBounds.height - subtitleBounds.height;
+          const offsetX = liBounds.x - subtitleBounds.x;
+          const offsetY = liBounds.y - subtitleBounds.y + deltaHeight / 2;
+          subtitle.style.display = "inline-block";
+          subtitle.style.position = "relative";
+          subtitle.style.left = `${offsetX}px`;
+          subtitle.style.top = `${offsetY}px`;
+          subtitle.style.transition = "500ms ease 0s";
+
+          setTimeout(() => {
+            subtitle.style.left = "0px";
+            subtitle.style.top = "0px";
+            subtitle.style.fontSize = subtitleFontSize;
+          });
+
+          subtitle.addEventListener(
+            "transitionend",
+            () => {
+              anchor.href = href;
+              setTimeout(() => {
+                anchor.click();
+              }, 250);
+            },
+            { once: true },
+          );
+        },
+        { once: true },
+      );
+    }
+  });
+</script>
