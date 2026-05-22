@@ -1,0 +1,44 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { siteTitle } from "../constants";
+import "../styles/reset.css";
+import "../styles/global.css";
+
+interface Props {
+  pageTitle?: string;
+}
+
+const { pageTitle } = Astro.props;
+const title =
+  pageTitle === undefined ? siteTitle : `${siteTitle} – ${pageTitle}`;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">
+          <a href="/">{siteTitle}</a>
+          {
+            pageTitle === undefined ? (
+              ""
+            ) : (
+              <>
+                <span id="subtitle">
+                  <a href="./">{pageTitle}</a>
+                </span>
+              </>
+            )
+          }
+        </h1>
+      </header>
+      <hr />
+      <main id="content">
+        <slot />
+      </main>
+    </main>
+  </body>
+</html>
