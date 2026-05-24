@@ -23,12 +23,19 @@ export function partition<T>(p: (x: T) => boolean, xs: T[]): [T[], T[]] {
 
 export function zipWith<X, Y, Z>(f: (x: X, y: Y) => Z, xs: X[], ys: Y[]): Z[] {
   const zs: Z[] = [];
-  xs.forEach((x, i) => {
-    if (i < ys.length) {
-      const y = ys[i];
-      zs.push(f(x, y));
-    }
-  });
+  const n = Math.min(xs.length, ys.length);
+  for (var i = 0; i < n; i++) {
+    zs.push(f(xs[i], ys[i]));
+  }
+  return zs;
+}
+
+export function zipWithLongest<X, Y, Z>(f: (x?: X, y?: Y) => Z, xs: X[], ys: Y[]): Z[] {
+  const zs: Z[] = [];
+  const n = Math.max(xs.length, ys.length);
+  for (var i = 0; i < n; i++) {
+    zs.push(f(xs.at(i), ys.at(i)));
+  }
   return zs;
 }
 
