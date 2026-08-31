@@ -49,11 +49,11 @@
   year: 2026
   src: scream.jpg
 - id: 29
-  alt: spotty-gritty-salter-2
+  alt: spotty-gritty-salter
   caption: |
     A gritty little salt vessel.
   year: 2026
-  src: spotty-gritty-salter-2.jpg
+  src: spotty-gritty-salter.jpg
 - id: 28
   alt: flambé-health-potion
   caption: |
@@ -61,67 +61,67 @@
   year: 2026
   src: flambé-health-potion.jpg
 - id: 27
-  alt: roman-sippy-cup-6
+  alt: roman-sippy-cup
   caption: |
     A vessel inspired by the ancient Roman sippy cups in the collection of Museum Kam, Nijmegen.
   year: 2025
   highlight: true
-  src: roman-sippy-cup-6.jpg
+  src: roman-sippy-cup.jpg
 - id: 26
-  alt: green-blue-cup-2
+  alt: green-blue-cup
   caption: |
     A little green and blue teacup.
   year: 2025
-  src: green-blue-cup-2.jpg
+  src: green-blue-cup.jpg
 - id: 24
-  alt: little-blocks-of-colour-2
+  alt: little-blocks-of-colour
   caption: |
     A little teacup with blocks of colour, inspired by a teacup I had when I was a kid.
   year: 2025
-  src: little-blocks-of-colour-2.jpg
+  src: little-blocks-of-colour.jpg
 - id: 23
-  alt: runny-metal-bowl-2
+  alt: runny-metal-bowl
   caption: |
     A bowl with a nice runny metal glaze effect on the inside.
   year: 2025
-  src: runny-metal-bowl-2.jpg
+  src: runny-metal-bowl.jpg
 - id: 22
-  alt: tall-dotty-cup-3
+  alt: tall-dotty-cup
   caption: |
     A tall coffee cup with little dots and an orange/purple gradient.
   year: 2025
-  src: tall-dotty-cup-3.jpg
+  src: tall-dotty-cup.jpg
 - id: 21
-  alt: wonky-teacup-4
+  alt: wonky-teacup
   caption: |
     A wonky little teacup for trying out my oxblood and flambé glazes.
   year: 2025
-  src: wonky-teacup-4.jpg
+  src: wonky-teacup.jpg
 - id: 20
-  alt: spiky-teacup-2
+  alt: spiky-teacup
   caption: |
     A spiky little teacup.
   year: 2026
-  src: spiky-teacup-2.jpg
+  src: spiky-teacup.jpg
 - id: 19
-  alt: ribby-big-cup-9
+  alt: ribby-big-cup
   caption: |
     A tall ribbed bowl.
   year: 2026
-  src: ribby-big-cup-9.jpg
+  src: ribby-big-cup.jpg
 - id: 18
-  alt: tiny-oxblood-urn-6
+  alt: tiny-oxblood-urn
   caption: |
     A tiny porcelain url.
   year: 2025
-  src: tiny-oxblood-urn-6.jpg
+  src: tiny-oxblood-urn.jpg
 - id: 17
-  alt: schmits-invert-1
+  alt: schmits-invert
   caption: |
     My tribute to Rose Schmits' Trans Forms.
   year: 2025
   highlight: true
-  src: schmits-invert-1.jpg
+  src: schmits-invert.jpg
 - id: 16
   alt: little-green-cube
   caption: |
@@ -129,29 +129,29 @@
   year: 2025
   src: little-green-cube.jpg
 - id: 15
-  alt: pointy-iron-bunch-13
+  alt: pointy-iron-bunch
   caption: |
     A small planter with a geometric pattern.
   year: 2024
-  src: pointy-iron-bunch-13.jpg
+  src: pointy-iron-bunch.jpg
 - id: 14
-  alt: teacup-kintsugi-1
+  alt: teacup-kintsugi
   caption: |
     A tiny teacup that arrived broken, mended with lacquer and silver.
   year: 2024
-  src: teacup-kintsugi-1.jpg
+  src: teacup-kintsugi.jpg
 - id: 13
-  alt: delfts-t4t-2
+  alt: delfts-t4t
   caption: |
     A porcelain cup that says t4t inspired by Delfts Blauw.
   year: 2025
-  src: delfts-t4t-2.jpg
+  src: delfts-t4t.jpg
 - id: 12
-  alt: speckly-pourer-3
+  alt: speckly-pourer
   caption: |
     A little speckled oil pourer.
   year: 2025
-  src: speckly-pourer-3.jpg
+  src: speckly-pourer.jpg
 - id: 11
   alt: hoi-koe-cup
   caption: |
@@ -159,18 +159,18 @@
   year: 2025
   src: hoi-koe-cup.jpg
 - id: 10
-  alt: drippy-bowl-5
+  alt: drippy-bowl
   caption: |
     A bowl with drippy glaze in a variety of colours.
   year: 2024
   highlight: true
-  src: drippy-bowl-5.jpg
+  src: drippy-bowl.jpg
 - id: 9
-  alt: greeyee-fermenter-2
+  alt: greeyee-fermenter
   caption: |
     A green and yellow fermentation vessel with water lock.
   year: 2025
-  src: greeyee-fermenter-2.jpg
+  src: greeyee-fermenter.jpg
 - id: 8
   alt: accidental-flame-decal
   caption: |
@@ -203,11 +203,11 @@
   year: 2025
   src: lines-and-splatter.jpg
 - id: 3
-  alt: spo-self-hug-4
+  alt: spo-self-hug
   caption: |
     A tiny self-hugging vase inspired by SPOramics.
   year: 2024
-  src: spo-self-hug-4.jpg
+  src: spo-self-hug.jpg
 - id: 2
   alt: black-pink-bottle
   caption: |
@@ -215,8 +215,8 @@
   year: 2025
   src: black-pink-bottle.jpg
 - id: 1
-  alt: ear-cup-3
+  alt: ear-cup
   caption: |
     A small cup with an ear.
   year: 2023
-  src: ear-cup-3.jpg
+  src: ear-cup.jpg
