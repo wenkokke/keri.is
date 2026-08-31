@@ -1,4 +1,5 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import type { ImageMetadata } from "astro";
@@ -12,8 +13,11 @@ import {
   zipWithLongest,
 } from "../../constants";
 
+// Type of ceramics.
+type Ceramic = CollectionEntry<"ceramics">;
+
 // Load ceramics.
-const ceramics = (await getCollection("ceramics")).toSorted(
+const ceramics: Ceramic[] = (await getCollection("ceramics")).toSorted(
   (x, y) => parseInt(y.id) - parseInt(x.id),
 );
 
@@ -24,27 +28,38 @@ const [ceramicsHighlight, ceramicsRegular] = partition(
 );
 
 // Check the ratio of regular and highlighted ceramics.
+const ceramicsRegularLength = ceramicsRegular.length;
+const ceramicsHighlightLength = ceramicsHighlight.length;
 const [ceramicsRegularChunkSize, ceramicsHighlightChunkSize] = [10, 2];
 const ceramicsRegularChunksCount =
-  ceramicsRegular.length / ceramicsRegularChunkSize;
+  ceramicsRegularLength / ceramicsRegularChunkSize;
 const ceramicsHighlightChunksCount =
   /* If the last chunk is incomplete, it has no highlighted items. */
-  ceramicsRegular.length % ceramicsHighlightChunkSize === 0
+  ceramicsRegularLength % ceramicsHighlightChunkSize === 0
     ? ceramicsRegularChunksCount
     : ceramicsRegularChunksCount - 1;
 const ceramicsHighlightCount =
   ceramicsHighlightChunkSize * Math.floor(ceramicsHighlightChunksCount);
-if (ceramicsHighlightCount != ceramicsHighlight.length) {
+// console.log({
+//   ceramicsRegularLength,
+//   ceramicsRegularChunkSize,
+//   ceramicsRegularChunksCount,
+//   ceramicsHighlightLength,
+//   ceramicsHighlightChunkSize,
+//   ceramicsHighlightChunksCount,
+//   ceramicsHighlightCount,
+// });
+if (ceramicsHighlightCount != ceramicsHighlightLength) {
   throw Error(
-    `Expected ${ceramicsHighlightCount} highlighted ceramics, but found ${ceramicsHighlight.length}.`,
+    `Expected ${ceramicsHighlightCount} highlighted ceramics, but found ${ceramicsHighlightLength}.`,
   );
 }
 
 // Merge chunks with highlights at correct position for layout.
-const ceramicsChunks = zipWithLongest(
+const ceramicsChunks: Ceramic[][] = zipWithLongest(
   (xs, ys) => {
     if (ys === undefined) {
-      return xs;
+      return xs ?? [];
     } else {
       const [y1, y2] = ys;
       return spliceAll(xs ?? [], [
