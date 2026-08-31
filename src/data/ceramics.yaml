@@ -1,3 +1,53 @@
+- id: 37
+  alt: bars
+  caption: |
+    A small sculpture.
+  year: 2026
+  highlight: true
+  src: bars.jpg
+- id: 36
+  alt: faces
+  caption: |
+    A vase with many faces.
+  year: 2026
+  src: faces.jpg
+- id: 35
+  alt: goblin
+  caption: |
+    A little guy with a broken horn.
+  year: 2026
+  src: goblin.jpg
+- id: 34
+  alt: ink-vessel
+  caption: |
+    An ink vessel for working with dipping pens.
+  year: 2026
+  src: ink-vessel.jpg
+- id: 33
+  alt: journey
+  caption: |
+    A small sculpture.
+  year: 2026
+  src: journey.jpg
+- id: 32
+  alt: pacifier
+  caption: |
+    A little jar.
+  year: 2026
+  src: pacifier.jpg
+- id: 31
+  alt: om
+  caption: |
+    A soap dish.
+  year: 2026
+  src: om.jpg
+- id: 30
+  alt: scream
+  caption: |
+    A small sculpture.
+  highlight: true
+  year: 2026
+  src: scream.jpg
 - id: 29
   alt: spotty-gritty-salter-2
   caption: |

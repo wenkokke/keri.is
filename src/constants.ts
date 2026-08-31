@@ -30,11 +30,11 @@ export function zipWith<X, Y, Z>(f: (x: X, y: Y) => Z, xs: X[], ys: Y[]): Z[] {
   return zs;
 }
 
-export function zipWithLongest<X, Y, Z>(f: (x?: X, y?: Y) => Z, xs: X[], ys: Y[]): Z[] {
+export function zipWithLongest<X, Y, Z>(f: (x: X | undefined, y: Y | undefined, i: number) => Z, xs: X[], ys: Y[]): Z[] {
   const zs: Z[] = [];
   const n = Math.max(xs.length, ys.length);
   for (var i = 0; i < n; i++) {
-    zs.push(f(xs.at(i), ys.at(i)));
+    zs.push(f(xs.at(i), ys.at(i), i));
   }
   return zs;
 }
