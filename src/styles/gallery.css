@@ -49,6 +49,9 @@
   border: 0;
   display: block;
 }
+.gallery-item a.gallery-extra {
+  display: none;
+}
 /* Default styles */
 .gallery-item0 {
   grid-column-start: 1;

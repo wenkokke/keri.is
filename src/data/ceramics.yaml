@@ -122,6 +122,8 @@
   year: 2025
   highlight: true
   src: schmits-invert.jpg
+  extras:
+    - src: schmits-invert-2.jpg
 - id: 16
   alt: little-green-cube
   caption: |

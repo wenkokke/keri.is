@@ -12,9 +12,11 @@ import {
   spliceAll,
   zipWithLongest,
 } from "../../constants";
+import type { InferEntrySchema } from "astro:content";
 
 // Type of ceramics.
 type Ceramic = CollectionEntry<"ceramics">;
+type CeramicData = InferEntrySchema<"ceramics">;
 
 // Load ceramics.
 const ceramics: Ceramic[] = (await getCollection("ceramics")).toSorted(
@@ -87,7 +89,7 @@ const imageDataMap = Object.fromEntries(
 
 <BaseLayout pageTitle={"a Potter"}>
   {
-    ceramicsChunks.map((ceramicsChunk, _ceramicsChunkIndex) => {
+    ceramicsChunks.map((ceramicsChunk, ceramicsChunkIndex) => {
       const galleryIsComplete = ceramicsChunk.length === 12;
       const galleryClassList = [
         ["gallery"],
@@ -105,7 +107,15 @@ const imageDataMap = Object.fromEntries(
             if (data === undefined) {
               console.log(`Could not find data for ${src}`);
             }
-            const loading = itemIndex < 20 ? "eager" : "lazy";
+            const itemIndexForPage = (ceramicsChunkIndex + 1) * (itemIndex + 1);
+            const loading = itemIndexForPage < 20 ? "eager" : "lazy";
+            const extras = item.data.extras.map((extra) => {
+              const alt = extra.alt ?? item.data.alt;
+              const caption = extra.caption ?? item.data.caption;
+              const src = `/src/assets/images/ceramics/${extra.src}`;
+              const data = imageDataMap[src];
+              return { alt, caption, src, data };
+            });
             return (
               <div class={itemClassList.join(" ")}>
                 <a
@@ -123,6 +133,24 @@ const imageDataMap = Object.fromEntries(
                     src={data}
                   />
                 </a>
+                {extras.map((extra) => (
+                  <a
+                    href={extra.data.src}
+                    data-fancybox="gallery"
+                    data-caption={extra.caption}
+                    class="gallery-extra"
+                  >
+                    <Picture
+                      alt={extra.alt}
+                      layout="constrained"
+                      format="webp"
+                      width="1620"
+                      height="1080"
+                      loading="lazy"
+                      src={extra.data}
+                    />
+                  </a>
+                ))}
               </div>
             );
           })}
