@@ -5,24 +5,33 @@
   year: 2026
   highlight: true
   src: bars.jpg
+  extras:
+    - src: bars-2.jpg
 - id: 36
   alt: faces
   caption: |
     A vase with many faces.
   year: 2026
   src: faces.jpg
+  extras:
+    - src: faces-2.jpg
+    - src: faces-3.jpg
 - id: 35
   alt: goblin
   caption: |
     A little guy with a broken horn.
   year: 2026
   src: goblin.jpg
+  extras:
+    - src: goblin-2.jpg
 - id: 34
   alt: ink-vessel
   caption: |
     An ink vessel for working with dipping pens.
   year: 2026
   src: ink-vessel.jpg
+  extras:
+    - src: ink-vessel-2.jpg
 - id: 33
   alt: journey
   caption: |
@@ -35,12 +44,16 @@
     A little jar.
   year: 2026
   src: pacifier.jpg
+  extras:
+    - src: pacifier-2.jpg
 - id: 31
   alt: om
   caption: |
     A soap dish.
   year: 2026
   src: om.jpg
+  extras:
+    - src: om-2.jpg
 - id: 30
   alt: scream
   caption: |
@@ -48,6 +61,9 @@
   highlight: true
   year: 2026
   src: scream.jpg
+  extras:
+    - src: scream-2.jpg
+    - src: scream-3.jpg
 - id: 29
   alt: spotty-gritty-salter
   caption: |
@@ -173,6 +189,8 @@
     A green and yellow fermentation vessel with water lock.
   year: 2025
   src: greeyee-fermenter.jpg
+  extras:
+    - src: greeyee-fermenter-2.jpg
 - id: 8
   alt: accidental-flame-decal
   caption: |
@@ -210,6 +228,8 @@
     A tiny self-hugging vase inspired by SPOramics.
   year: 2024
   src: spo-self-hug.jpg
+  extras:
+    - src: spo-self-hug-2.jpg
 - id: 2
   alt: black-pink-bottle
   caption: |
@@ -222,3 +242,5 @@
     A small cup with an ear.
   year: 2023
   src: ear-cup.jpg
+  extras:
+    - src: ear-cup-2.jpg
