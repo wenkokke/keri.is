@@ -33,6 +33,7 @@
 
   /* Font */
   --font-header: var(--font-jojoba);
+  --font-body: var(--font-pencil-child);
 }
 
 body {
@@ -113,4 +114,10 @@ hr {
   margin-top: 0;
   margin-bottom: 2rem;
   padding: 0;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }

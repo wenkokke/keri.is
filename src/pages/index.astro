@@ -4,13 +4,25 @@ import "../styles/navigation.css";
 ---
 
 <BaseLayout>
-  <nav class="navigation">
-    <ul>
-      <li>
-        <a href="a/potter/" data-navigation> a Potter</a>
-      </li>
-    </ul>
-  </nav>
+  <p>
+    Hiya!
+  </p>
+  <p>
+    I don't like Instagram, so this is where I post pictures.
+  </p>
+  <p>
+    You can look at them if you like.
+  </p>
+  <p>
+    Here's an exhaustive list of things that I am:
+    <nav class="navigation">
+      <ul>
+        <li>
+          <a href="a/potter/" data-navigation> a Potter</a>
+        </li>
+      </ul>
+    </nav>
+  </p>
 </BaseLayout>
 
 <script>
@@ -21,7 +33,6 @@ import "../styles/navigation.css";
       const li = anchor.parentElement!;
       const liBounds = li.getBoundingClientRect();
       const liFontSize = window.getComputedStyle(li).fontSize;
-      console.log(liBounds);
 
       // Remove hyperlink, but keep pointer style.
       const href = anchor.href;
